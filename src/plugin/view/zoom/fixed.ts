@@ -1,0 +1,15 @@
+import { App, Rect } from 'leafer-ui'
+import '@leafer-in/editor'
+import '@leafer-in/view'
+
+const app = new App({ view: window, editor: {} })
+
+const rect = Rect.one({ editable: true, fill: '#FEB027', cornerRadius: [20, 0, 0, 20] }, 100, 100)
+app.tree.add(rect)
+app.tree.add(Rect.one({ editable: true, fill: '#FFE04B', cornerRadius: [0, 20, 20, 0] }, 300, 100))
+
+setTimeout(() => {
+
+    app.tree.zoom(rect, 0, true) // [!code hl:1]
+
+}, 1000)

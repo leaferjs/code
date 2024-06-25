@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo | Leafer UI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="https://unpkg.com/leafer-ui@1.0.0-rc.28/dist/web.min.js"></script>
+  </head>
+
+  <body></body>
+
+  <script>
+    // 注意 Image、PointerEvent 等会和 浏览器自带的全局变量冲突，需要加上 LeaferUI 前缀访问
+    // 如: var image = new LeaferUI.image
+    // 或使用自运行函数 (function(){ ...代码 })(), 防止覆盖全局变量
+
+    var leafer = new LeaferUI.Leafer({ view: window })
+
+    var rect = new LeaferUI.Rect({
+      x: 100,
+      y: 100,
+      width: 200,
+      height: 200,
+      fill: '#32cd79',
+      cornerRadius: [50, 80, 0, 80],
+      draggable: true,
+    })
+
+    leafer.add(rect)
+  </script>
+</html>
