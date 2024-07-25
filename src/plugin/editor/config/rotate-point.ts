@@ -3,7 +3,7 @@ import '@leafer-in/editor'
 
 const app = new App({  // [!code hl:4]
     view: window,
-    editor: { rotatePoint: {} }
+    editor: { circle: {} }
 })
 
 const rect = Rect.one({ editable: true, fill: 'rgb(50,205,121)', cornerRadius: 30 }, 100, 100)

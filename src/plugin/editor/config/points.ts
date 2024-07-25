@@ -6,7 +6,7 @@ const app = new App({  // [!code hl:9]
     editor: {
         point: { cornerRadius: 0 },
         middlePoint: {},
-        rotatePoint: { width: 16, height: 16 },
+        circle: { width: 16, height: 16 },
         rect: { dashPattern: [3, 2] }
     }
 })

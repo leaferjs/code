@@ -4,7 +4,7 @@ import '@leafer-in/editor'
 const app = new App({  // [!code hl:7]
     view: window,
     editor: {
-        rotatePoint: {},
+        circle: {},
         middlePoint: {},
         buttonsDirection: 'top'
     }
