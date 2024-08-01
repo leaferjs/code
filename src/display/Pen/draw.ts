@@ -14,5 +14,4 @@ leafer.on(DragEvent.START, (e: DragEvent) => {
 leafer.on(DragEvent.DRAG, (e: DragEvent) => {
     const inner = e.getInner(pen)
     pen.lineTo(inner.x, inner.y)
-    pen.paint()
 })

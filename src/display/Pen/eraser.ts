@@ -23,8 +23,8 @@ group.on('drag', (e: DragEvent) => {
     x += e.moveX
     y += e.moveY
     pen.lineTo(x, y)
-    pen.paint()
 })
+
 group.on('pointer.up', () => {
     x = undefined
 })
