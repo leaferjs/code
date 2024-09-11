@@ -8,7 +8,7 @@ const rect = new Rect({
     fill: {  // [!code hl:5]
         type: 'image',
         url: '/image/leafer.jpg',
-        mode: 'strench'
+        mode: 'stretch'
     }
 })
 

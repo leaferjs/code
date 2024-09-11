@@ -14,7 +14,7 @@ const rect = new Rect({
     fill: {  // [!code hl:5]
         type: 'image',
         url: Platform.toURL(svg, 'svg'),
-        mode: 'strench'
+        mode: 'stretch'
     },
     draggable: true
 })
