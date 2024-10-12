@@ -2,12 +2,13 @@ import { Leafer, Rect, Frame } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
-const rect = new Rect({ // [!code hl:9]
+const rect = new Rect({
     x: 50,
     y: 50,
     width: 50,
     height: 50,
-    around: 'center',
+    around: 'center', // [!code hl:2]
+    skewX: 45,
     draggable: true,
     fill: '#4DCB71'
 })

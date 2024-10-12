@@ -9,9 +9,8 @@ const rect = new Rect({
     fill: '#32cd79',
     animation: { // [!code hl:6]
         style: { x: 500, cornerRadius: 0, fill: '#ffcd00' }, // style keyframe
-        // options
         duration: 1,
-        direction: 'alternate'
+        swing: true // 摇摆循环播放
     }
 })
 

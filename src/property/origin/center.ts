@@ -3,11 +3,11 @@ import { Leafer, Rect, Frame } from 'leafer-ui'
 const leafer = new Leafer({ view: window })
 
 const rect = new Rect({ // [!code hl:9]
-    x: 50,
-    y: 50,
+    x: 25,
+    y: 25,
     width: 50,
     height: 50,
-    around: 'center',
+    origin: 'center',
     draggable: true,
     fill: '#4DCB71'
 })

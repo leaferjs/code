@@ -11,7 +11,7 @@ const rect = new Rect({
         style: { x: 500, cornerRadius: 0 }, // style keyframe
         // options
         duration: 1,
-        direction: 'alternate'
+        swing: true
     }
 })
 

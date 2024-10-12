@@ -16,7 +16,6 @@ const rect = new Rect({
             { style: { x: 550, cornerRadius: 0, fill: '#ffcd00' }, delay: 0.1, easing: 'bounce-out' },
             { x: 50, rotation: -720, cornerRadius: 50 } // style keyframe
         ],
-        // options
         duration: 3, // 自动分配剩余的时长给未设置 duration 的关键帧： (3 - 0.5 - 0.2 - 0.1) / 2 
         loop: true,
         join: true //  加入动画前的元素状态作为 from 关键帧

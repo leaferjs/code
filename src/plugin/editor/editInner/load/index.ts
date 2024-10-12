@@ -9,7 +9,7 @@ export class CustomEditor extends InnerEditor {
 
     public point: Box
 
-    public onCreate(): void {  // 1. 创建控制点 // [!code hl:6]
+    public onCreate(): void {  // 1. 创建控制点 // [!code hl:7]
         this.view.add(this.point = new Box()) // 可以添加多个
         this.eventIds = [
             this.point.on_(DragEvent.DRAG, () => { console.log('drag point') })
