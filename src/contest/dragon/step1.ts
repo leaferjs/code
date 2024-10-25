@@ -3,6 +3,7 @@ import { Leafer, DragEvent, Line, IPointData } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
+
 const points: IPointData[] = []  // 收集绘画坐标
 
 const line = new Line({ stroke: 'black', strokeWidth: 10, points })

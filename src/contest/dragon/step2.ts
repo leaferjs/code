@@ -1,8 +1,9 @@
+import { App, Line, Rect, Path } from 'leafer-ui'
+import '@leafer-in/editor' // 图形编辑插件
 
-import { App, Line, Rect } from 'leafer-ui'
-import '@leafer-in/editor'
 
-import { points } from './points' // 之前采集的飞行路径坐标点
+// 之前采集的飞行路径及龙的路径部件
+import { points, headPath, bodyPath, clawLeftPath, clawRightPath, tailPath } from './dragon'
 
 
 const app = new App({
@@ -11,30 +12,43 @@ const app = new App({
 })
 
 // 加载龙的飞行路径
-const line = new Line({ points })
+const line = new Line({ motionPath: true, points }) // 增加 motionPath: true， 设为运动路径
 app.tree.add(line)
 
 
+// --- 第一部分 ---
+
 // 绘制龙
 
-// 1. 头
-const head = new Rect({ width: 30, height: 30, around: 'center', fill: 'black' })
+let fill = 'black' // 填充色
+
+/// 1. 头
+const head = new Path({
+    path: headPath,
+    fill,
+    around: 'center'
+})
 app.tree.add(head)
 
 // 2. 爪子
 const claws = [
-    new Rect({ width: 20, height: 40, around: 'bottom', fill: 'black' }),
-    new Rect({ width: 20, height: 40, around: 'top', fill: 'gray' }),
-    new Rect({ width: 20, height: 40, around: 'bottom', fill: 'black' }),
-    new Rect({ width: 20, height: 40, around: 'top', fill: 'gray' })
+    new Path({ path: clawLeftPath, fill, around: 'center' }),
+    new Path({ path: clawRightPath, fill, around: 'center' }),
+    new Path({ path: clawLeftPath, fill, around: 'center' }),
+    new Path({ path: clawRightPath, fill, around: 'center' }),
 ]
 app.tree.add(claws)
 
 // 3. 身体，多个活动关节
 const body: Rect[] = []
-for (let i = 0; i < 20; i++) body.push(new Rect({ width: 20, height: 20, around: 'center', fill: 'rgb(50,205,121)' }))
+for (let i = 0; i < 36; i++) {
+    let scale = 1
+    if (i < 10) scale -= (10 - i) / 30 // 靠近头部收窄
+    else if (i > 16) scale -= (i - 16) / 30  // 尾部收窄
+    body.push(new Path({ path: bodyPath, fill, scale, around: 'center' }))
+}
 app.tree.add(body)
 
 // 4. 尾巴
-const tail = new Rect({ width: 20, height: 20, around: 'center', fill: 'red' })
-app.tree.add(tail) 
+const tail = new Path({ path: tailPath, fill, around: 'center' })
+app.tree.add(tail)

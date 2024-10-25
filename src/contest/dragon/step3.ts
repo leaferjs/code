@@ -1,9 +1,12 @@
 
-import { App, Line, Rect, Platform, IRotationPointData } from 'leafer-ui'
-import '@leafer-in/editor'
-import '@leafer-in/motion-path'
+import { App, Line, Rect, Platform, Path } from 'leafer-ui'
+import '@leafer-in/editor' // 图形编辑插件
+import '@leafer-in/motion-path' // 运动路径插件
+import '@leafer-in/animate' // 动画插件
+import '@leafer-in/state' // 按钮状态插件
 
-import { points } from './points' // 之前采集的飞行路径坐标点
+// 之前采集的飞行路径及龙的路径部件
+import { points, headPath, headWithEyePath, bodyPath, clawLeftPath, clawRightPath, tailPath } from './dragon'
 
 
 const app = new App({
@@ -16,74 +19,93 @@ const line = new Line({ motionPath: true, points }) // 增加 motionPath: true�
 app.tree.add(line)
 
 
+// --- 第一部分 ---
+
 // 绘制龙
 
+let fill = 'black' // 填充色
+
 /// 1. 头
-const head = new Rect({ width: 30, height: 30, around: 'center', fill: 'black' })
+const head = new Path({
+    path: headPath,
+    fill,
+    around: 'center',
+    cursor: 'pointer', // 增加按钮交互效果
+    hoverStyle: { scale: 1.2 },
+    pressStyle: { scale: 3, transition: 0.5 }
+})
 app.tree.add(head)
 
 // 2. 爪子
 const claws = [
-    new Rect({ width: 20, height: 40, around: 'bottom', fill: 'black' }),
-    new Rect({ width: 20, height: 40, around: 'top', fill: 'gray' }),
-    new Rect({ width: 20, height: 40, around: 'bottom', fill: 'black' }),
-    new Rect({ width: 20, height: 40, around: 'top', fill: 'gray' })
+    new Path({ path: clawLeftPath, fill, around: 'center' }),
+    new Path({ path: clawRightPath, fill, around: 'center' }),
+    new Path({ path: clawLeftPath, fill, around: 'center' }),
+    new Path({ path: clawRightPath, fill, around: 'center' }),
 ]
 app.tree.add(claws)
 
 // 3. 身体，多个活动关节
 const body: Rect[] = []
-for (let i = 0; i < 20; i++) body.push(new Rect({ width: 20, height: 20, around: 'center', fill: 'rgb(50,205,121)' }))
+for (let i = 0; i < 36; i++) {
+    let scale = 1
+    if (i < 10) scale -= (10 - i) / 30 // 靠近头部收窄
+    else if (i > 16) scale -= (i - 16) / 30  // 尾部收窄
+    body.push(new Path({ path: bodyPath, fill, scale, around: 'center' }))
+}
 app.tree.add(body)
 
 // 4. 尾巴
-const tail = new Rect({ width: 20, height: 20, around: 'center', fill: 'red' })
+const tail = new Path({ path: tailPath, fill, around: 'center' })
 app.tree.add(tail)
 
 
-// 飞行到指定位置
-function flyTo(to: number): void {
-    let point: IRotationPointData
 
-    head.set(line.getMotionPoint(to)) // 获取运动路径上的点，然后 set({x, y, rotation})
-    to -= 30
+// --- 第二部分 ---
 
-    body.forEach(item => {
-        if (to >= 0) item.set(line.getMotionPoint(to))
-        to -= 25
-    })
+// 飞行动画及交互
 
-    if (to >= 0) tail.set(line.getMotionPoint(to))
+// 1. 准备飞行数据
+const total = line.getMotionTotal() // 飞行的总里程（运动路径的总长度）
+let to = 700 // 飞往的位置（距离起点）
 
-    // 爪子需要特殊处理一下
-    const space = (body.length / 4) * 25
-    to += space
-    if (to >= 0) {
-        point = line.getMotionPoint(to)
-        claws[0].set(point)
-        claws[1].set(point)
-        claws[0].rotation -= 30
-        claws[1].rotation += 30
-    }
-
-    to += space * 2
-    if (to >= 0) {
-        point = line.getMotionPoint(to)
-        claws[2].set(point)
-        claws[3].set(point)
-        claws[2].rotation -= 30
-        claws[3].rotation += 30
-    }
+function getPosition(position: number): number {
+    return position < 0 ? total + position : position // 生成有效的定位位置
 }
 
-//  沿路径飞行的数据
-const total = line.getMotionTotal() // 运动路径的总长度
-let to = 600 // 飞往的位置（距离起点）
+// 2. 飞行到指定位置，并定位龙的部件
+function flyTo(to: number) {
+    let position = to
+
+    // 定位头部
+    head.set(line.getMotionPoint(position)) // 获取运动路径上的点，然后 set({x, y, rotation})
+    position -= 15
+
+    // 定位身体
+    body.forEach(item => {
+        item.set(line.getMotionPoint(getPosition(position)))
+        position -= 30 * item.scaleX * 0.75
+    })
+
+    // 定位尾巴
+    tail.set(line.getMotionPoint(getPosition(position)))
+
+    // 定位爪子
+    const quarter = (position - to) / 4 // 身体长度的 1/4
+
+    position = to + quarter
+    claws[0].set(line.getMotionPoint(getPosition(position)))
+    claws[1].set(line.getMotionPoint(getPosition(position += 20)))
+
+    position = to + quarter * 3
+    claws[2].set(line.getMotionPoint(getPosition(position)))
+    claws[3].set(line.getMotionPoint(getPosition(position += 20)))
+}
 
 
-// 开始循环飞行动画
+// 3. 循环飞行动画
 function animate() {
-    to += 5
+    to += 8
     if (to > total) to = 0
     flyTo(to)
 
@@ -91,12 +113,15 @@ function animate() {
 }
 
 
-// 设置龙的初始状态
-flyTo(to)
-
-
-// 点击头部之后开始动画
+// 4.点击头部之后开始飞行动画
 head.on('tap', () => {
-    head.fill = 'blue'
-    animate()
+    head.path = headWithEyePath // 替换带眼睛的龙头路径
+    setTimeout(() => {
+        animate()
+    }, 500)
+
 })
+
+
+// 设置龙的初始飞行状态
+flyTo(to)
