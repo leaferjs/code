@@ -1,22 +1,16 @@
 
-import { App, Line, Rect, Platform, Path } from 'leafer-ui'
-import '@leafer-in/editor' // 图形编辑插件
-import '@leafer-in/motion-path' // 运动路径插件
-import '@leafer-in/animate' // 动画插件
-import '@leafer-in/state' // 按钮状态插件
+import { Leafer, Line, Platform, Path } from 'leafer-game'
 
-// 之前采集的飞行路径及龙的路径部件
+
+// 导入龙的路径部件 及 之前采集的飞行路径
 import { points, headPath, headWithEyePath, bodyPath, clawLeftPath, clawRightPath, tailPath } from './dragon'
 
 
-const app = new App({
-    view: window,
-    editor: {} // 会自动创建 editor实例、tree层、sky层
-})
+const leafer = new Leafer({ view: window })
 
 // 加载龙的飞行路径
 const line = new Line({ motionPath: true, points }) // 增加 motionPath: true， 设为运动路径
-app.tree.add(line)
+leafer.add(line)
 
 
 // --- 第一部分 ---
@@ -34,7 +28,7 @@ const head = new Path({
     hoverStyle: { scale: 1.2 },
     pressStyle: { scale: 3, transition: 0.5 }
 })
-app.tree.add(head)
+leafer.add(head)
 
 // 2. 爪子
 const claws = [
@@ -43,21 +37,21 @@ const claws = [
     new Path({ path: clawLeftPath, fill, around: 'center' }),
     new Path({ path: clawRightPath, fill, around: 'center' }),
 ]
-app.tree.add(claws)
+leafer.add(claws)
 
 // 3. 身体，多个活动关节
-const body: Rect[] = []
+const body: Path[] = []
 for (let i = 0; i < 36; i++) {
     let scale = 1
     if (i < 10) scale -= (10 - i) / 30 // 靠近头部收窄
     else if (i > 16) scale -= (i - 16) / 30  // 尾部收窄
     body.push(new Path({ path: bodyPath, fill, scale, around: 'center' }))
 }
-app.tree.add(body)
+leafer.add(body)
 
 // 4. 尾巴
 const tail = new Path({ path: tailPath, fill, around: 'center' })
-app.tree.add(tail)
+leafer.add(tail)
 
 
 
@@ -78,28 +72,28 @@ function flyTo(to: number) {
     let position = to
 
     // 定位头部
-    head.set(line.getMotionPoint(position)) // 获取运动路径上的点，然后 set({x, y, rotation})
+    head.set(head.getMotionPoint(position)) // 获取运动路径上的点，然后 set({x, y, rotation})
     position -= 15
 
     // 定位身体
     body.forEach(item => {
-        item.set(line.getMotionPoint(getPosition(position)))
+        item.set(item.getMotionPoint(getPosition(position)))
         position -= 30 * item.scaleX * 0.75
     })
 
     // 定位尾巴
-    tail.set(line.getMotionPoint(getPosition(position)))
+    tail.set(tail.getMotionPoint(getPosition(position)))
 
     // 定位爪子
     const quarter = (position - to) / 4 // 身体长度的 1/4
 
     position = to + quarter
-    claws[0].set(line.getMotionPoint(getPosition(position)))
-    claws[1].set(line.getMotionPoint(getPosition(position += 20)))
+    claws[0].set(claws[0].getMotionPoint(getPosition(position)))
+    claws[1].set(claws[1].getMotionPoint(getPosition(position += 20)))
 
     position = to + quarter * 3
-    claws[2].set(line.getMotionPoint(getPosition(position)))
-    claws[3].set(line.getMotionPoint(getPosition(position += 20)))
+    claws[2].set(claws[2].getMotionPoint(getPosition(position)))
+    claws[3].set(claws[3].getMotionPoint(getPosition(position += 20)))
 }
 
 

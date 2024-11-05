@@ -1,8 +1,7 @@
-import { App, Line, Rect, Path } from 'leafer-ui'
+import { App, Line, Path } from 'leafer-ui'
 import '@leafer-in/editor' // 图形编辑插件
 
-
-// 之前采集的飞行路径及龙的路径部件
+// 导入龙的路径部件 及 之前采集的飞行路径
 import { points, headPath, bodyPath, clawLeftPath, clawRightPath, tailPath } from './dragon'
 
 
@@ -12,13 +11,11 @@ const app = new App({
 })
 
 // 加载龙的飞行路径
-const line = new Line({ motionPath: true, points }) // 增加 motionPath: true， 设为运动路径
+const line = new Line({ points })
 app.tree.add(line)
 
 
-// --- 第一部分 ---
-
-// 绘制龙
+// 开始绘制龙
 
 let fill = 'black' // 填充色
 
@@ -40,7 +37,7 @@ const claws = [
 app.tree.add(claws)
 
 // 3. 身体，多个活动关节
-const body: Rect[] = []
+const body: Path[] = []
 for (let i = 0; i < 36; i++) {
     let scale = 1
     if (i < 10) scale -= (10 - i) / 30 // 靠近头部收窄
