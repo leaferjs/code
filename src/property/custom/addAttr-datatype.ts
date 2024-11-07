@@ -2,7 +2,7 @@ import { Leafer, Text, dataType } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
-Text.addAttr('version', '1.0.8', dataType)  //  [!code hl]
+Text.addAttr('version', '1.0.9', dataType)  //  [!code hl]
 
 // default version
 
@@ -10,7 +10,7 @@ const text = new Text({ text: 'Welcome to LeaferJS' })
 
 leafer.add(text)
 
-console.log((text as any).version) // 1.0.8
+console.log((text as any).version) // 1.0.9
 
 // set version
 
