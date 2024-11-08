@@ -9,6 +9,6 @@ leafer.addMany(rect, rect2)
 
 setTimeout(() => {
 
-    leafer.clear() // [!code hl] // 清空所有子元素
+    leafer.clear() // [!code hl] // 清空并销毁所有子元素
 
 }, 2000)
