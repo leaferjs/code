@@ -9,5 +9,6 @@ leafer.add(rect1)
 leafer.add(rect2)
 
 console.log(
-    leafer.findOne('#block') // [!code hl] // rect1
+    leafer.findOne('#block') // [!code hl:2] // rect1
+    // = leafer.findId('block') 
 )
