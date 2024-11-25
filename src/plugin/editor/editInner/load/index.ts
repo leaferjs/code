@@ -1,5 +1,5 @@
 import { Box, DragEvent } from 'leafer-ui'
-import { InnerEditor, registerInnerEditor } from '@leafer-in/editor'
+import { InnerEditor, Editor, registerInnerEditor } from '@leafer-in/editor'
 
 
 @registerInnerEditor()
@@ -9,7 +9,10 @@ export class CustomEditor extends InnerEditor {
 
     public point: Box
 
-    public onCreate(): void {  // 1. 创建控制点 // [!code hl:7]
+    constructor(editor: Editor) {
+        super(editor)
+
+        // 1. 创建控制点 // [!code hl:5]
         this.view.add(this.point = new Box()) // 可以添加多个
         this.eventIds = [
             this.point.on_(DragEvent.DRAG, () => { console.log('drag point') })

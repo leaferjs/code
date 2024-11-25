@@ -1,5 +1,5 @@
 import { App, Rect, Box, DragEvent } from 'leafer-ui'
-import { EditTool, registerEditTool } from '@leafer-in/editor'
+import { EditTool, Editor, registerEditTool } from '@leafer-in/editor'
 
 
 @registerEditTool()
@@ -9,7 +9,10 @@ export class CustomEditTool extends EditTool {
 
     public point: Box
 
-    public onCreate(): void {
+    constructor(editor: Editor) {
+        super(editor)
+
+        // 创建控制点
         this.view.add(this.point = new Box()) // 可以添加多个
         this.eventIds = [
             this.point.on_(DragEvent.DRAG, () => { console.log('drag point') })

@@ -1,5 +1,5 @@
 import { App, Star, Box, DragEvent, PointerEvent } from 'leafer-ui'
-import { InnerEditor, registerInnerEditor } from '@leafer-in/editor'
+import { InnerEditor, Editor, registerInnerEditor } from '@leafer-in/editor'
 
 
 @registerInnerEditor()
@@ -10,7 +10,10 @@ export class CustomEditor extends InnerEditor {
     public point: Box
     public closeBtn: Box
 
-    public onCreate(): void {
+    constructor(editor: Editor) {
+        super(editor)
+
+        // 创建控制点
         this.point = new Box()
         this.closeBtn = new Box({ fill: '#FF4B4B', cornerRadius: 20, around: 'top', cursor: 'pointer', children: [{ tag: 'Text', text: '完成', padding: [10, 20] }] })
         this.view.addMany(this.point, this.closeBtn)
