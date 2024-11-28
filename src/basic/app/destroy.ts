@@ -8,6 +8,7 @@ leafer.add(rect)
 
 setTimeout(() => {
 
-    leafer.destroy() // [!code hl] // 应用销毁默认为异步方式
+    leafer.destroy() // [!code hl:2] // 应用销毁，默认为异步方式
+    // leafer.destroy(true)  //  销毁应用，同步方式
 
 }, 2000)
