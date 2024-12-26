@@ -17,4 +17,4 @@ app.tree.add(Frame.one({ // 页面内容
     ]
 }, 100, 100, 500, 600))
 
-// app.sky.add(app.editor = new Editor()) // 添加图形编辑器，用于选中元素进行编辑操作 [!code hl]
+// app.sky.add(app.editor = new Editor()) // 添加图形编辑器，用于选中元素进行编辑操作 // [!code hl]

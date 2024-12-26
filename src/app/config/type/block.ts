@@ -6,7 +6,7 @@ const canvas = document.body.appendChild(document.createElement('canvas'))
 div.style.height = '600px'
 div.innerText = '请往下滑，会出现一个矩形'
 
-const leafer = new Leafer({ view: canvas, height: 800 })
+const leafer = new Leafer({ view: canvas, height: 800 }) // 默认 block 类型，不要设置
 
 const rect = new Rect({
     x: 100,
