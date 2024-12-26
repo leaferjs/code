@@ -1,8 +1,8 @@
 import { Leafer } from 'leafer-ui'
 
-const leafer = new Leafer({ // [!code hl:4]
+const leafer = new Leafer({
     view: window,
-    start: false
+    start: false // [!code hl]
 })
 
 // async create leafs ...

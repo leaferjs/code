@@ -1,5 +1,6 @@
 import { App, Rect } from 'leafer-ui'
 import { EditorEvent } from '@leafer-in/editor'
+import '@leafer-in/viewport' // 导入视口插件(可选)
 
 const app = new App({
     view: window,

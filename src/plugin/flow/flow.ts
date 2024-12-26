@@ -1,13 +1,23 @@
 import { Leafer, Rect, Star, Ellipse } from 'leafer-ui'
-import { Flow } from '@leafer-in/flow'
+import { Flow } from '@leafer-in/flow'  // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 
-const flow = new Flow({ flow: 'x', gap: { x: 'auto', y: 20 }, fill: 'gray', flowAlign: { content: 'top', x: 'from' }, flowWrap: true, x: 100, y: 100, width: 260, height: 260 })
+const flow = new Flow({
+    flow: 'y',  // [!code hl:4] 
+    gap: { x: 'auto', y: 20 },
+    flowAlign: { content: 'top', x: 'from' },
+    flowWrap: true,
+    x: 100,
+    y: 100,
+    width: 260,
+    height: 260,
+    fill: 'gray'
+})
 
 const rect = new Rect({ fill: 'red' })
 const star = new Star({ fill: 'green', x: 800, height: 100 })
 const ellipse = new Ellipse({ fill: 'blue' })
-flow.addMany(rect, star, ellipse)
+flow.add([rect, star, ellipse])
 
 leafer.add(flow)

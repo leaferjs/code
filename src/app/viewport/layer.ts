@@ -1,6 +1,7 @@
 import { Leafer, Group, Rect } from 'leafer-ui'
+import '@leafer-in/viewport' // 导入视口插件
 
-const leafer = new Leafer({ view: window })
+const leafer = new Leafer({ view: window, type: 'viewport' })
 
 const group = new Group() // [!code hl:4]
 leafer.add(group)

@@ -1,8 +1,8 @@
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
-const leafer = new Leafer({ // [!code hl:4]
+const leafer = new Leafer({
     view: window,
-    pointer: { through: true }
+    pointer: { through: true }  // [!code hl]
 })
 
 const data = { x: 100, y: 100, fill: '#32cd00' }
@@ -14,5 +14,5 @@ const rect = new Rect(data)
 leafer.add(rect)
 
 rect.on(PointerEvent.DOWN, (e: PointerEvent) => {
-    console.log(e.throughPath) //{ list: [bottomRect, rect, leafer] }
+    console.log(e.throughPath) // { list: [bottomRect, rect, leafer] }
 })

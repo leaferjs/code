@@ -1,6 +1,12 @@
-import { Leafer } from 'leafer-ui'
+import { Leafer, Rect } from 'leafer-ui'
+import '@leafer-in/viewport' // 导入视口插件
 
-new Leafer({ // [!code hl:4]
+const leafer = new Leafer({
     view: window,
-    type: 'document'
+    type: 'document' // 添加视口 // [!code hl]
 })
+
+leafer.add(Rect.one({ fill: '#32cd79' }, 100, 100, 200, 200))
+leafer.add(Rect.one({ fill: '#32cd79' }, 100, 600, 200, 200))
+leafer.add(Rect.one({ fill: '#32cd79' }, 100, 1200, 200, 200))
+leafer.add(Rect.one({ fill: '#32cd79' }, 100, 1800, 200, 200))

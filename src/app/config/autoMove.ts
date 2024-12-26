@@ -1,12 +1,11 @@
 import { Leafer, Rect } from 'leafer-ui'
+import '@leafer-in/viewport' // 导入视口插件
 
-const leafer = new Leafer({ // [!code hl:4]
+const leafer = new Leafer({
     view: window,
-    move: { dragOut: true }
+    type: 'viewport',
+    move: { dragOut: true } // [!code hl]
 })
 
-const rect = new Rect({ x: 100, y: 100, fill: '#32cd79', draggable: true, })
-const rect2 = new Rect({ x: 100, y: 300, fill: '#32cd79', draggable: true, })
-
-leafer.add(rect)
-leafer.add(rect2)
+leafer.add(Rect.one({ fill: '#32cd79', draggable: true }, 100, 100))
+leafer.add(Rect.one({ fill: '#32cd79', draggable: true }, 300, 100))
