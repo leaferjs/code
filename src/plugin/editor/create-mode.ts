@@ -16,7 +16,7 @@ setTimeout(() => {
     app.editor.visible = false
     app.tree.hitChildren = false
 
-    // 创建图形（拖拽）
+    // 创建矩形（拖拽）
     let rect: Rect
 
     app.on(DragEvent.START, () => {
@@ -25,7 +25,7 @@ setTimeout(() => {
     })
 
     app.on(DragEvent.DRAG, (e: DragEvent) => {
-        if (rect) rect.set(e.getPageBounds())
+        if (rect) rect.set(e.getPageBounds()) // 获取事件在 page 坐标系中绘制形成的包围盒  // [!code hl]
     })
 
 }, 2000)

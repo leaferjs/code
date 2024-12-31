@@ -12,7 +12,7 @@ const path = new Path({
     y: 100,
     scale: 0.2,
     motionPath: true, // 设置为运动路径，该 Group 内的其他元素都可以沿此路径运动
-    stroke: 'black',
+    stroke: '#32cd79',
     strokeWidth: 20,
     animation: {  // 沿 path 运动描边至 100%
         style: { motion: { type: "percent", value: 1 } },

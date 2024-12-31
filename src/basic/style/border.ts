@@ -10,7 +10,8 @@ const rect = new Rect({ // [!code hl:9]
     height: 200,
     fill: '#32cd79',
     stroke: 'black', // [!code hl:2]
-    strokeWidth: 2
+    strokeWidth: 2,
+    dashPattern: [6, 6] // 绘制虚线
 })
 
 leafer.add(rect)

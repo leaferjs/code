@@ -16,7 +16,7 @@ const robot = new Robot({
         arrowDown: [10, 11, 12, 13, 14],
         arrowLeft: [15, 16, 17, 18, 19]
     },
-    action: 'right' // 设置动作：静止向右的箭头
+    action: 'arrowRight' // 设置动作：动态向右的箭头
 })
 
 leafer.add(robot)
