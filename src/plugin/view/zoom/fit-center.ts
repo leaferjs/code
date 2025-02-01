@@ -1,3 +1,4 @@
+// #视图控制 [让画布内容居中显示]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/view'

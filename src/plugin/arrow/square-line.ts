@@ -1,3 +1,4 @@
+// #箭头样式 [方形箭头（线性）]
 import { Leafer } from 'leafer-ui'
 import { Arrow } from '@leafer-in/arrow'
 

@@ -1,3 +1,4 @@
+// #箭头样式 [角度箭头 - 箭头变得平滑]
 import { Leafer } from 'leafer-ui'
 import { Arrow } from '@leafer-in/arrow'
 

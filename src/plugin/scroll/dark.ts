@@ -1,6 +1,7 @@
+// #滚动条 [暗黑主题]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
-import { ScrollBar } from '@leafer-in/scroll'
+import { ScrollBar } from '@leafer-in/scroll' // 导入滚动条插件
 
 const app = new App({ view: window, fill: '#000', editor: {} })
 

@@ -1,4 +1,4 @@
-
+// #创建 Robot 游戏元素 [leafer-game]
 import { Leafer, Robot, KeyEvent } from 'leafer-game'
 
 const leafer = new Leafer({ view: window })

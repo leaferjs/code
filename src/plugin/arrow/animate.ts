@@ -1,3 +1,4 @@
+// #动画样式 [虚线箭头动画]
 import { Leafer } from 'leafer-ui'
 import { Arrow } from '@leafer-in/arrow'
 import '@leafer-in/animate' // 导入动画插件

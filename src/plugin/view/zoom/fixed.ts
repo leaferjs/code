@@ -1,3 +1,4 @@
+// #视图控制 [聚焦到指定元素 - 不缩放画布，只进行位移]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/view'

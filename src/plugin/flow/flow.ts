@@ -1,3 +1,4 @@
+// #自动布局
 import { Leafer, Rect, Star, Ellipse } from 'leafer-ui'
 import { Flow } from '@leafer-in/flow'  // [!code hl] 
 
