@@ -1,3 +1,4 @@
+// #请求渲染/动画帧
 import { Platform } from 'leafer-ui'
 
 // 1. 请求一次渲染帧，等同于 window.requestAnimateFrame

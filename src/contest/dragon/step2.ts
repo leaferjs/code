@@ -1,5 +1,5 @@
 import { App, Line, Path } from 'leafer-ui'
-import '@leafer-in/editor' // 图形编辑插件
+import '@leafer-in/editor' // 导入图形编辑器插件 // 图形编辑插件
 
 // 导入龙的路径部件 及 之前采集的飞行路径
 import { points, headPath, bodyPath, clawLeftPath, clawRightPath, tailPath } from './dragon'

@@ -1,6 +1,7 @@
+// #自定义状态 [切换状态] 
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/state'
-import '@leafer-in/animate'
+import '@leafer-in/state' // 导入交互状态插件
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

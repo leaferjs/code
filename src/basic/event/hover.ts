@@ -1,4 +1,4 @@
-// #region listen
+// #监听事件 [通过 on 方法监听]
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -27,4 +27,3 @@ function onLeave(e: PointerEvent) {
 
 rect.on(PointerEvent.ENTER, onEnter)
 rect.on(PointerEvent.LEAVE, onLeave)
-// #endregion listen

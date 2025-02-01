@@ -1,3 +1,4 @@
+// #Rect 转路径优先模式 [使用 pen 绘制]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,3 +1,4 @@
+// #擦除功能 [将路径设为橡皮擦]
 import { Leafer, Group, Path, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -18,10 +19,9 @@ const image = new Image({
     width: 100,
     height: 100,
     cornerRadius: 30,
-    url: 'image/leafer.jpg'
+    url: '/image/leafer.jpg'
 })
 
 leafer.add(group)
 
-group.add(image)   // [!code hl:2]
-group.add(eraser) 
+group.add([image, eraser])  // [!code hl]

@@ -1,3 +1,4 @@
+// #交互功能 [只有 stroke 能响应交互]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -12,7 +13,7 @@ const rect = new Rect({
     },
     strokeWidth: 10,
     draggable: true,
-    hitFill: 'none' // [!code hl]
+    hitFill: 'none' // [!code hl] // 只有 stroke 能响应交互
 })
 
 leafer.add(rect)

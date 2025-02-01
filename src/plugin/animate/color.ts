@@ -1,5 +1,6 @@
+// #创建动画实例 [颜色过渡]
 import { Leafer, Rect } from 'leafer-ui'
-import { Animate } from '@leafer-in/animate'
+import { Animate } from '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

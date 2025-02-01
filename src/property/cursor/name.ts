@@ -1,3 +1,4 @@
+// #光标样式 [设置光标]
 import { Leafer, Polygon } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,3 +1,4 @@
+// #创建 Rect [绘制不同圆角的矩形]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

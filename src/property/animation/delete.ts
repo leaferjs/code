@@ -1,5 +1,6 @@
+// #动画样式 [删除文本动画]
 import { Leafer, Text } from 'leafer-ui'
-import '@leafer-in/animate'
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

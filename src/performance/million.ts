@@ -1,3 +1,4 @@
+// #创建百万矩形的性能示例
 import { Leafer, Group, Rect, Debug } from 'leafer-ui'
 
 class RectsCase {

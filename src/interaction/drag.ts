@@ -1,3 +1,4 @@
+// #模拟 drag 事件
 import { Leafer, Rect, DragEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -19,6 +20,3 @@ leafer.waitReady(() => { // [!code hl:7]
     interaction.pointerUp()
 
 })
-
-
-

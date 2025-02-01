@@ -1,3 +1,4 @@
+// #模拟缩放事件
 import { Leafer, Rect, ZoomEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

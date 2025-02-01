@@ -1,3 +1,4 @@
+// #图案填充 [repeat 平铺模式旋转 90 度]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

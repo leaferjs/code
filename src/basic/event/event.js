@@ -1,4 +1,4 @@
-// #region listen
+// #监听事件 [通过 event 对象监听]
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -17,4 +17,3 @@ const rect = Rect.one({
 }, 100, 100, 200, 200)
 
 leafer.add(rect)
-// #endregion listen

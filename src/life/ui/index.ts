@@ -1,3 +1,4 @@
+// #监听元素生命周期事件 [通过 event 对象监听]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

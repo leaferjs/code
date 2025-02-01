@@ -1,3 +1,4 @@
+// #创建 Pen [结合文字]
 import { Leafer, Pen, Text } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

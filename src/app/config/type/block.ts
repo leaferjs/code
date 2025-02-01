@@ -1,3 +1,4 @@
+// #应用配置 - viewport 视口类型 [Leafer]
 import { Leafer, Rect } from 'leafer-ui'
 
 const div = document.body.appendChild(document.createElement('div'))

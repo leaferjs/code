@@ -1,3 +1,4 @@
+// #应用配置 - viewport 视口类型 [实现原理]
 import { App, Rect, MoveEvent, ZoomEvent } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

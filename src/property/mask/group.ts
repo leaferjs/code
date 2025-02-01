@@ -1,3 +1,4 @@
+// #遮罩功能 [将圆形组设为遮罩]
 import { Leafer, Group, Ellipse, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -14,10 +15,9 @@ maskGroup.add(new Ellipse({ x: 50, y: 50, width: 50, height: 50, fill: 'black' }
 const image = new Image({
     width: 100,
     height: 100,
-    url: 'image/leafer.jpg'
+    url: '/image/leafer.jpg'
 })
 
 leafer.add(group)
 
-group.add(maskGroup)   // [!code hl:2]
-group.add(image)
+group.add([maskGroup, image])   // [!code hl:]

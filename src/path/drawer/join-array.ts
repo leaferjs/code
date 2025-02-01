@@ -1,3 +1,4 @@
+// #生成路径数据 - [在数字路径上继续绘制]
 import { Leafer, Path, PathCreator } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

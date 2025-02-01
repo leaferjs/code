@@ -1,3 +1,4 @@
+// #应用配置 - 拖拽至边界时自动平移视图 [Leafer]
 import { Leafer, Rect } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

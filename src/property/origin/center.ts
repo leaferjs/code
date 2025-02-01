@@ -1,3 +1,4 @@
+// #原点 [设置原点在中心]
 import { Leafer, Rect, Frame } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -7,7 +8,7 @@ const rect = new Rect({ // [!code hl:9]
     y: 25,
     width: 50,
     height: 50,
-    origin: 'center',
+    origin: 'center', // 设置原点在中心
     draggable: true,
     fill: '#4DCB71'
 })

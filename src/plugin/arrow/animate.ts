@@ -1,6 +1,6 @@
 import { Leafer } from 'leafer-ui'
 import { Arrow } from '@leafer-in/arrow'
-import '@leafer-in/animate'
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

@@ -1,3 +1,4 @@
+// #创建 Canvas [使用图形元素绘制]
 import { Leafer, Canvas, Pen } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

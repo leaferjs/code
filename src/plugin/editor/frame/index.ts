@@ -1,3 +1,4 @@
+// #App结构 - 图形编辑器 [editor]
 import { App, Frame, Rect } from 'leafer-ui'
 import { Editor } from '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件(可选)

@@ -1,5 +1,5 @@
 import { App, Text } from 'leafer-ui'
-import '@leafer-in/editor'  // [!code hl:2] 
+import '@leafer-in/editor' // 导入图形编辑器插件  // [!code hl:2] 
 import '@leafer-in/text-editor'
 
 const app = new App({

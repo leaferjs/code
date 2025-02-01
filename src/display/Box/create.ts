@@ -1,3 +1,4 @@
+// #创建 Box [标准创建]
 import { Leafer, Box, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window, fill: 'gray' })

@@ -1,3 +1,4 @@
+// #应用配置 - 关闭局部渲染 [App]
 import { App, Rect, Debug } from 'leafer-ui'
 
 const app = new App({

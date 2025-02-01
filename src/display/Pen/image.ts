@@ -1,3 +1,4 @@
+// #创建 Pen [结合图片]
 import { Leafer, Pen } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

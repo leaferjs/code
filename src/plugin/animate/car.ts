@@ -1,7 +1,8 @@
 
+// #运动路径 [沿路径运动]
 import { Group, Leafer, Path, Polygon } from 'leafer-ui'
-import '@leafer-in/animate'
-import '@leafer-in/motion-path'
+import '@leafer-in/animate' // 导入动画插件
+import '@leafer-in/motion-path' // 导入运动路径插件
 
 const leafer = new Leafer({ view: window })
 

@@ -1,7 +1,7 @@
 
 import { KeyEvent, Leafer } from 'leafer-ui'
 import { Robot } from '@leafer-in/robot'
-import '@leafer-in/animate'
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

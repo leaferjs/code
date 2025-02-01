@@ -1,3 +1,4 @@
+// #创建 Polygon [绘制平滑多边形]
 import { Leafer, Polygon } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

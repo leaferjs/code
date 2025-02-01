@@ -1,3 +1,4 @@
+// #原点 [围绕原点缩放 1.5 倍]
 import { Leafer, Rect, Frame } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -8,7 +9,7 @@ const rect = new Rect({
     width: 50,
     height: 50,
     origin: 'center', // [!code hl:2]
-    scale: 2, // scaleX = scaleY = 2
+    scale: 1.5, // scaleX = scaleY = 1.5
     draggable: true,
     fill: '#4DCB71'
 })

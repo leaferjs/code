@@ -1,3 +1,4 @@
+// #创建 Path [缠绕路径]
 import { Leafer, Path } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

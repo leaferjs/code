@@ -1,3 +1,4 @@
+// #创建 Line [绘制横线]
 import { Leafer, Line } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

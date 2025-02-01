@@ -1,3 +1,4 @@
+// #图形编辑器 [scale模式]
 import { App, Text } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件(可选)

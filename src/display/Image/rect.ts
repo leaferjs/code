@@ -1,3 +1,4 @@
+// #使用 Rect 代替 Image
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

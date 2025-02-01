@@ -1,3 +1,4 @@
+// #模拟点击事件
 import { Leafer, Rect, PointerButton, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

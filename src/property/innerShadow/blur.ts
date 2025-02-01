@@ -1,3 +1,4 @@
+// #内阴影
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

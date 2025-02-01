@@ -1,3 +1,4 @@
+// #虚线描边
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

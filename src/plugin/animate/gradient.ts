@@ -1,6 +1,7 @@
+// #动画样式 [渐变颜色过渡]
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/state'
-import '@leafer-in/animate'
+import '@leafer-in/state' // 导入交互状态插件
+import '@leafer-in/animate' // 导入动画插件
 import '@leafer-in/transition'
 
 const leafer = new Leafer({ view: window })

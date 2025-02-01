@@ -1,3 +1,4 @@
+// #光标样式 [覆盖系统光标]
 import { Cursor } from 'leafer-ui'
 
 Cursor.set('pointer', { url: 'https://leaferjs.com/image/cursor.svg' }) // 替换pointer光标

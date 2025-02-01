@@ -1,6 +1,6 @@
+// #应用配置 - 鼠标滚动直接缩放视图 [Leafer]
 import { Leafer, Rect } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
-
 
 const leafer = new Leafer({
     view: window,

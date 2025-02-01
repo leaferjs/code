@@ -1,3 +1,4 @@
+// #擦除功能 [将圆形组设为橡皮擦]
 import { Leafer, Group, Ellipse, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -17,11 +18,9 @@ const image = new Image({
     width: 100,
     height: 100,
     cornerRadius: 30,
-    url: 'image/leafer.jpg'
+    url: '/image/leafer.jpg'
 })
 
-leafer.add(Ellipse.one({ fill: '#FEB027' }, group.x + 60, group.y + 60, 50, 50))
 leafer.add(group)
 
-group.add(image) // [!code hl:2]
-group.add(eraserGroup) 
+group.add([image, eraserGroup])  // [!code hl]

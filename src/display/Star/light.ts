@@ -1,3 +1,4 @@
+// #创建 Star [绘制星光]
 import { Leafer, Star } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

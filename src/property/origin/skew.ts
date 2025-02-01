@@ -1,3 +1,4 @@
+// #原点 [围绕原点倾斜 45 度]
 import { Leafer, Rect, Frame } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

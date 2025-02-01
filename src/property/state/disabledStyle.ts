@@ -1,5 +1,6 @@
+// #禁用状态 
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/state'
+import '@leafer-in/state' // 导入交互状态插件
 
 const leafer = new Leafer({ view: window })
 
@@ -8,7 +9,7 @@ const rect = new Rect({
     height: 100,
     fill: 'rgba(50,205,121, 1)',
     cornerRadius: 30,
-    disabledStyle: { // [!code hl:3]
+    disabledStyle: { // [!code hl:3] // 禁用样式
         fill: 'rgba(50,205,121, 0.5)'
     }
 })
@@ -17,7 +18,7 @@ leafer.add(rect)
 
 setTimeout(() => {
 
-    rect.disabled = true  // [!code hl:1]
+    rect.disabled = true  // [!code hl:1] // 设置禁用状态
 
     setTimeout(() => { rect.disabled = false }, 2000)
 

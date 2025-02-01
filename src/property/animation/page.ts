@@ -1,5 +1,6 @@
+// #动画样式 [入场和出场动画]
 import { Group, Leafer, Frame } from 'leafer-ui'
-import '@leafer-in/animate'
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

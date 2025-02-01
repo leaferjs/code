@@ -1,3 +1,4 @@
+// #新增元素属性 [为文本新增一个 float 属性]
 import { Leafer, Text } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

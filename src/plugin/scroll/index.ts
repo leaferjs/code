@@ -1,5 +1,5 @@
 import { App, Rect } from 'leafer-ui'
-import '@leafer-in/editor'
+import '@leafer-in/editor' // 导入图形编辑器插件
 import { ScrollBar } from '@leafer-in/scroll'
 
 const app = new App({ view: window, editor: {} })

@@ -1,6 +1,5 @@
+// #遮罩功能 [快速设置遮罩]
 import { Leafer, Group, Ellipse, Image, UI } from 'leafer-ui'
-
-
 
 const leafer = new Leafer({ view: window })
 
@@ -9,7 +8,7 @@ const group = new Group({ x: 100, y: 100, draggable: true })
 const image = new Image({
     width: 100,
     height: 100,
-    url: 'image/leafer.jpg'
+    url: '/image/leafer.jpg'
 })
 
 addMask(group, new Ellipse({ // [!code hl:7]

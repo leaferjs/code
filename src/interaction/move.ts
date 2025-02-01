@@ -1,3 +1,4 @@
+// #模拟平移事件
 import { Leafer, Rect, MoveEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

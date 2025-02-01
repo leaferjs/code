@@ -1,6 +1,6 @@
 
 import { App, Rect, Group, DragEvent, DropEvent } from 'leafer-ui'
-import '@leafer-in/editor'
+import '@leafer-in/editor' // 导入图形编辑器插件
 
 const app: App = new App({
     view: window,

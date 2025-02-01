@@ -1,40 +1,17 @@
-// #region create
+// #初始化元素样式
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
-const rect = new Rect({ // [!code hl:9]
+const rect = new Rect({ // [!code hl:10]
     x: 100,
     y: 100,
-    width: 200,
-    height: 200,
+    width: 100,
+    height: 100,
     fill: '#32cd79',
-    stroke: 'black', // [!code hl:2]
+    stroke: 'black',
     strokeWidth: 2,
     dashPattern: [6, 6] // 绘制虚线
 })
 
 leafer.add(rect)
-// #endregion create
-
-// #region change
-rect.stroke = 'blue'
-rect.strokeWidth = 4
-// #endregion change
-
-// #region set
-rect.set({
-    stroke: 'blue',
-    strokeWidth: 4
-})
-// #endregion set
-
-
-// #region reset
-rect.reset() // 完全重置
-
-rect.reset({ // 重置为新样式
-    stroke: 'blue',
-    strokeWidth: 4
-})
-// #endregion reset

@@ -1,4 +1,6 @@
+// #查找单个元素 [通过 className 查找]
 import { Leafer, Rect } from 'leafer-ui'
+import '@leafer-in/find' // 导入查找元素插件
 
 const leafer = new Leafer({ view: window })
 

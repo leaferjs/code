@@ -1,7 +1,7 @@
-
+// #运动路径 [自身描边动画]
 import { Group, Leafer, Path, Rect } from 'leafer-ui'
-import '@leafer-in/motion-path'
-import '@leafer-in/animate'
+import '@leafer-in/motion-path' // 导入运动路径插件
+import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })
 

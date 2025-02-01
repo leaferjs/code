@@ -1,0 +1,12 @@
+// #创建Image [固定高度，自适应宽度]
+import { Leafer, Image } from 'leafer-ui'
+
+const leafer = new Leafer({ view: window })
+
+const image = new Image({  // [!code hl:3]
+    url: '/image/leafer.jpg',
+    height: 50,
+    draggable: true
+})
+
+leafer.add(image)

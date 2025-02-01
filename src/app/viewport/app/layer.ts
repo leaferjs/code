@@ -1,3 +1,4 @@
+// #单独指定缩放层 [App]
 import { App, Group, Rect } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

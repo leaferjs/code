@@ -1,3 +1,4 @@
+// #监听图片事件 [加载成功]
 import { Leafer, Image, ImageEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

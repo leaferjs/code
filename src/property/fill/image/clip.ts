@@ -1,3 +1,4 @@
+// #图案填充 [clip 裁剪模式]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

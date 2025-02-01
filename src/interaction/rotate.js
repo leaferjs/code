@@ -1,3 +1,4 @@
+// #模拟旋转事件
 import { Leafer, Rect, RotateEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

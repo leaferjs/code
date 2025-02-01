@@ -1,3 +1,4 @@
+// #径向渐变填充 [设置不透明度]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,3 +1,4 @@
+// #创建Image [使用默认宽高]
 import { Leafer, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

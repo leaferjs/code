@@ -1,3 +1,4 @@
+// #交互功能 [不可见的 fill 也能响应交互]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -11,7 +12,7 @@ const rect = new Rect({
     },
     strokeWidth: 10,
     draggable: true,
-    hitFill: 'all' // [!code hl]
+    hitFill: 'all' // [!code hl] // 不可见的 fill 也能响应交互
 })
 
 leafer.add(rect)

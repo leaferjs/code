@@ -1,3 +1,4 @@
+// #外阴影 [box-shadow]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -12,7 +13,7 @@ const rect = new Rect({
         y: -10,
         blur: 20,
         color: '#FF0000AA',
-        box: true
+        box: true // box-shadow
     }
 })
 
