@@ -1,3 +1,4 @@
+// #监听拖拽事件
 import { Leafer, Rect, DragEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

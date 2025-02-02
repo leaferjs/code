@@ -1,3 +1,4 @@
+// #事件流
 import { Leafer, Group, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

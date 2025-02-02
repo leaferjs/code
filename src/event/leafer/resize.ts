@@ -1,3 +1,4 @@
+// #监听 Resize 事件
 import { Leafer, Rect, ResizeEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

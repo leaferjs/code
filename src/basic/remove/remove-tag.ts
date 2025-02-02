@@ -1,4 +1,4 @@
-// 移除元素 [条件移除]
+// #移除元素 [条件移除]
 import { Leafer, Rect } from 'leafer-ui'
 import '@leafer-in/find' // 导入查找元素插件
 

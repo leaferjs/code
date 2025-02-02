@@ -1,4 +1,4 @@
-// 移除元素 [清空元素]
+// #移除元素 [清空元素]
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

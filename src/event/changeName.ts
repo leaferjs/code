@@ -1,3 +1,4 @@
+// #自定义事件名称
 import { Leafer, Rect, PointerEvent, UIEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

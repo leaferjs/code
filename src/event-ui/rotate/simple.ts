@@ -1,3 +1,4 @@
+// #监听旋转交互事件
 import { Leafer, Rect, RotateEvent, LeafHelper } from 'leafer-ui'
 
 const leafer = new Leafer({

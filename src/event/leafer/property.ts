@@ -1,3 +1,4 @@
+// #监听元素属性事件
 import { Leafer, Rect, LeaferEvent, PropertyEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

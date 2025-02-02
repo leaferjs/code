@@ -1,3 +1,4 @@
+// #只监听一次事件
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

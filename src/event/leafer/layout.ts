@@ -1,3 +1,4 @@
+// #监听布局事件
 import { LayoutEvent, Leafer, Rect, } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

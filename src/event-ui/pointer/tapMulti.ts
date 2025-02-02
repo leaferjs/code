@@ -1,9 +1,10 @@
+// #监听点击事件 [同时派发多种点击事件]
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({
     view: window,
     pointer: {
-        tapMore: false // [!code hl]
+        tapMore: false // 配置同时派发多种点击事件 // [!code hl] 
     }
 })
 

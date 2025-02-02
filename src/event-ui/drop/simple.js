@@ -1,3 +1,4 @@
+// #监听拖放事件
 import { Leafer, Group, Rect, DropEvent, DragEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

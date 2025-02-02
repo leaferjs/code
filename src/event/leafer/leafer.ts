@@ -1,3 +1,4 @@
+// #监听 Leafer 事件
 import { Leafer, Rect, LeaferEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

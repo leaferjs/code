@@ -1,3 +1,4 @@
+// #监听滑动事件
 import { Leafer, Rect, SwipeEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

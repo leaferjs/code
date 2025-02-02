@@ -1,3 +1,4 @@
+// #阻止事件流传递
 import { Leafer, Group, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -11,7 +12,7 @@ parent.add(rect)
 // 捕获 ---
 parent.on(PointerEvent.ENTER, function (e: PointerEvent) { // [!code hl:11]
     console.log('[capture] Parent enter A')
-    e.stop() // [!code hl]
+    e.stop() // 阻止事件向父节点传递 // [!code hl]
 }, true)
 
 parent.on(PointerEvent.ENTER, function () {

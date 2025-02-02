@@ -1,3 +1,4 @@
+// #监听平移交互事件
 import { Leafer, Rect, MoveEvent } from 'leafer-ui'
 
 const leafer = new Leafer({

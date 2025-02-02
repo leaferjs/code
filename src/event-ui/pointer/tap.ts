@@ -1,3 +1,4 @@
+// #监听点击事件 [多种点击事件同时只触发一个]
 import { Leafer, Rect, PointerEvent } from 'leafer-ui'
 
 const leafer = new Leafer({

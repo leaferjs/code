@@ -1,3 +1,4 @@
+// #监听缩放交互事件
 import { Leafer, Rect, ZoomEvent, LeafHelper } from 'leafer-ui'
 
 const leafer = new Leafer({

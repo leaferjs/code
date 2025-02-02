@@ -1,3 +1,4 @@
+// #监听事件 [简洁模式]
 import { IEventListenerId } from '@leafer/interface'
 import { UI, PointerEvent } from 'leafer-ui'
 

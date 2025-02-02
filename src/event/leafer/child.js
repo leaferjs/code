@@ -1,3 +1,4 @@
+// #监听 Child 事件
 import { Leafer, Group, Rect, ChildEvent, LeaferEvent } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
