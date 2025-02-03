@@ -1,7 +1,7 @@
 // #创建 Box [自适应文本]
 import { Leafer, Box } from 'leafer-ui'
 
-const leafer = new Leafer({ view: window, fill: 'gray' })
+const leafer = new Leafer({ view: window, fill: '#333' })
 
 // Box 不设置宽高时，将自适应内容
 const box = new Box({

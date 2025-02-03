@@ -7,7 +7,7 @@ const leafer = new Leafer({
     width: 200,
     grow: true, // 自动生长 // [!code hl:3] 
     growWidth: false,  // 单独阻止宽度自动生长
-    fill: 'gray'
+    fill: '#333'
 })
 
 // 拖拽矩形可以看到画布在生长，自动贴合内容

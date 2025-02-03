@@ -1,6 +1,5 @@
-
+// #画龙点睛
 // 点击龙的眼睛试试， 龙会动起来
-
 import { Leafer, Line, Platform, Path } from 'leafer-game'
 
 const leafer = new Leafer({ view: window })

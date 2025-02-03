@@ -1,4 +1,3 @@
-
 // #运动路径 [沿路径运动]
 import { Group, Leafer, Path, Polygon } from 'leafer-ui'
 import '@leafer-in/animate' // 导入动画插件

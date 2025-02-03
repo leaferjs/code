@@ -2,7 +2,7 @@
 import { Leafer, Box } from 'leafer-ui'
 import '@leafer-in/state' // 导入交互状态插件
 
-const leafer = new Leafer({ view: window, fill: 'gray' })
+const leafer = new Leafer({ view: window, fill: '#333' })
 
 const box = new Box({
     x: 100,

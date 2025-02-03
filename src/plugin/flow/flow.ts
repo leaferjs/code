@@ -13,7 +13,7 @@ const flow = new Flow({
     y: 100,
     width: 260,
     height: 260,
-    fill: 'gray'
+    fill: '#333'
 })
 
 const rect = new Rect({ fill: 'red' })

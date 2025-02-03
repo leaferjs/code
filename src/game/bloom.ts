@@ -1,4 +1,4 @@
-
+// #心花怒放
 import { Leafer, Box, Group, Path, Text, Rect, IGradientPaint } from 'leafer-game'
 
 const leafer = new Leafer({ view: window, fill: '#111' })

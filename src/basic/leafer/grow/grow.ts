@@ -6,7 +6,7 @@ const leafer = new Leafer({
     grow: true, // 自动生长 // [!code hl:3] 
     // growWidth: true, // 进一步细化宽度是否生长， 默认同 grow
     // growHeight: true  // 进一步细化高度是否生长， 默认同 grow
-    fill: 'gray'
+    fill: '#333'
 })
 
 // 拖拽矩形可以看到画布在生长，自动贴合内容

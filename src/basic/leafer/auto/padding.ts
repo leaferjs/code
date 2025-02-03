@@ -8,7 +8,7 @@ const leafer = new Leafer({
     left: 100,
     right: 100,
     bottom: 30,
-    fill: 'gray'
+    fill: '#333'
 })
 
 leafer.add(Rect.one({ fill: '#32cd79', draggable: true }, 100, 100)) 

@@ -1,7 +1,7 @@
 // #创建 Frame [标准创建]
 import { Leafer, Frame, Ellipse } from 'leafer-ui'
 
-const leafer = new Leafer({ view: window, fill: 'gray' })
+const leafer = new Leafer({ view: window, fill: '#333' })
 
 const frame = new Frame({ // [!code hl:4]
     width: 100,

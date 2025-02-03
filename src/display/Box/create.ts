@@ -1,7 +1,7 @@
 // #创建 Box [标准创建]
 import { Leafer, Box, Ellipse } from 'leafer-ui'
 
-const leafer = new Leafer({ view: window, fill: 'gray' })
+const leafer = new Leafer({ view: window, fill: '#333' })
 
 const box = new Box({ // [!code hl:4]
     width: 100,

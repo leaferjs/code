@@ -1,7 +1,7 @@
 // #创建 Box [隐藏超出宽高的内容]
 import { Leafer, Box, Ellipse } from 'leafer-ui'
 
-const leafer = new Leafer({ view: window, fill: 'gray' })
+const leafer = new Leafer({ view: window, fill: '#333' })
 
 const box = new Box({ // [!code hl:6]
     width: 100,
