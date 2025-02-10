@@ -1,3 +1,4 @@
+// #图形编辑器 [引入leafer-editor]
 import { App, Rect } from 'leafer-editor'
 
 const app = new App({ // [!code hl:4]

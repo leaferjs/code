@@ -1,4 +1,4 @@
-// #移除元素 [销毁移除]
+// #隐藏元素
 import { Leafer, Rect } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -9,6 +9,9 @@ leafer.add(rect)
 
 setTimeout(() => {
 
-    rect.destroy() // [!code hl] // 等同于 rect.remove() => rect.destroy()
+    // #region main
+    // 隐藏元素
+    rect.visible = false
+    // #endregion main
 
-}, 2000)
+}, 1000)

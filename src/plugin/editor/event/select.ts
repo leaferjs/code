@@ -1,3 +1,4 @@
+// #图形编辑器 [选中元素事件]
 import { App, Rect } from 'leafer-ui'
 import { EditorEvent } from '@leafer-in/editor'
 import '@leafer-in/viewport' // 导入视口插件(可选)

@@ -4,8 +4,8 @@ import '@leafer-in/find' // 导入查找元素插件
 
 const leafer = new Leafer({ view: window })
 
-const rect = Rect.one({ id: 'book', fill: '#32cd79' }, 100, 100, 200, 200)
-const rect2 = Rect.one({ fill: 'blue' }, 300, 100, 200, 200)
+const rect = Rect.one({ id: 'book', fill: '#32cd79' }, 100, 100)
+const rect2 = Rect.one({ fill: 'blue' }, 300, 100)
 
 leafer.addMany(rect, rect2)
 

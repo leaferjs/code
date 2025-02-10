@@ -1,3 +1,4 @@
+// #图形编辑器 [editOuter]
 import { Text, defineKey } from 'leafer-ui'
 
 // 1. 设置类，所有 Text 元素生效（推荐）

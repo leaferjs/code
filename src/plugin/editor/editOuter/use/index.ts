@@ -1,3 +1,4 @@
+// # 图形编辑器 [自定义编辑工具]
 import { App, Rect, Box, DragEvent } from 'leafer-ui'
 import { EditTool, Editor, registerEditTool } from '@leafer-in/editor'
 
