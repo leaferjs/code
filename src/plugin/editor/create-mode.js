@@ -21,7 +21,7 @@ setTimeout(() => {
     let rect
 
     app.on(DragEvent.START, () => {
-        rect = new Rect({ editable: true, fill: 'rgb(50,205,121)' })
+        rect = new Rect({ editable: true, fill: '#32cd79' })
         app.tree.add(rect)
     })
 

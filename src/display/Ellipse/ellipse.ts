@@ -6,7 +6,7 @@ const leafer = new Leafer({ view: window })
 const ellipse = new Ellipse({  // [!code hl:5]
     width: 50,
     height: 100,
-    fill: "rgb(50,205,121)"
+    fill: "#32cd79"
 })
 
 leafer.add(ellipse)

@@ -8,8 +8,8 @@ const app = new App({
     editor: {}
 })
 
-app.tree.add(Rect.one({ fill: 'rgb(50,205,121)', editable: true }, 100, 100))
-app.tree.add(Rect.one({ fill: 'rgb(50,205,121)', editable: true }, 300, 100))
+app.tree.add(Rect.one({ fill: '#32cd79', editable: true }, 100, 100))
+app.tree.add(Rect.one({ fill: '#32cd79', editable: true }, 300, 100))
 
 app.editor.on(EditorEvent.SELECT, (e: EditorEvent) => { // [!code hl:3]
     console.log(e.editor.list)

@@ -5,7 +5,7 @@ import '@leafer-in/animate' // 导入动画插件
 const leafer = new Leafer({ view: window })
 
 const text = new Text({
-    fill: 'rgb(50,205,121)',
+    fill: '#32cd79',
     animation: {  // [!code hl:4]
         style: { text: 'Welcome to LeaferJS' },
         duration: 2,

@@ -8,9 +8,9 @@ const app = new App({ // [!code hl:4]
     editor: { buttonsFixed: true }
 })
 
-const rect = Rect.one({ editable: true, fill: 'rgb(50,205,121)' }, 100, 100)
+const rect = Rect.one({ editable: true, fill: '#32cd79' }, 100, 100)
 app.tree.add(rect)
-app.tree.add(Rect.one({ editable: true, fill: 'rgb(50,205,121)' }, 100, 300))
+app.tree.add(Rect.one({ editable: true, fill: '#32cd79' }, 100, 300))
 
 const button = Box.one({  // [!code hl:9] // 添加移除按钮
     around: 'center',

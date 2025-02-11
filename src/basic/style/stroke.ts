@@ -8,8 +8,7 @@ const rect = new Rect({ // [!code hl:10]
     y: 100,
     width: 100,
     height: 100,
-    fill: '#32cd79',
-    stroke: 'black',
+    stroke: '#32cd79',
     strokeWidth: 2,
     dashPattern: [6, 6] // 绘制虚线
 })

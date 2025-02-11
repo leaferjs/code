@@ -7,7 +7,7 @@ const line = new Line({  // [!code hl:6]
     points: [10, 90, 10, 10, 50, 70, 90, 10, 90, 90],  // [x,y, x,y ...]
     curve: 0.2,
     strokeWidth: 5,
-    stroke: 'rgb(50,205,121)'
+    stroke: '#32cd79'
 })
 
 leafer.add(line)

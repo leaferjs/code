@@ -5,7 +5,7 @@ import { HTMLText } from '@leafer-in/html'
 const leafer = new Leafer({ view: window })
 
 const text = new HTMLText({
-    text: '<i style="color: red; font-weight: bold;">Welcome</i> to <i style="color: rgb(50,205,121); font-size: 30px">LeaferJS</i>',
+    text: '<i style="color: red; font-weight: bold;">Welcome</i> to <i style="color: #32cd79; font-size: 30px">LeaferJS</i>',
 })
 
 leafer.add(text)

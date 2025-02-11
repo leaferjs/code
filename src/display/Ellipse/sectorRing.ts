@@ -9,7 +9,7 @@ const ellipse = new Ellipse({  // [!code hl:8]
     startAngle: -60,
     endAngle: 180,
     innerRadius: 0.5,
-    fill: "rgb(50,205,121)"
+    fill: "#32cd79"
 })
 
 leafer.add(ellipse)

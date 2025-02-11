@@ -8,7 +8,7 @@ const polygon = new Polygon({
     height: 100,
     points: [0, 90, 20, 60, 40, 80, 60, 40, 75, 50, 90, 10, 100, 90, 100, 90, 0, 90],
     curve: true,
-    fill: 'rgb(50,205,121)',
+    fill: '#32cd79',
     cursor: { url: 'https://leaferjs.com/image/cursor.svg', x: 2, y: 2 } // [!code hl]
 })
 

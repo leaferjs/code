@@ -9,7 +9,7 @@ const arrow = new Arrow({
     strokeCap: 'round', // [!code hl:2]
     strokeJoin: 'round',
     strokeWidth: 5,
-    stroke: 'rgb(50,205,121)'
+    stroke: '#32cd79'
 })
 
 leafer.add(arrow)

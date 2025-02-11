@@ -9,7 +9,7 @@ const ellipse = new Ellipse({  // [!code hl:8]
     startAngle: -60,
     endAngle: 180,
     innerRadius: 1,
-    stroke: "rgb(50,205,121)",
+    stroke: "#32cd79",
     strokeWidth: 10,
     strokeAlign: 'center',
     strokeCap: 'round'

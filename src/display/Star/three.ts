@@ -8,7 +8,7 @@ const star = new Star({  // [!code hl:6]
     height: 100,
     corners: 3,
     innerRadius: 0.15,
-    fill: 'rgb(50,205,121)'
+    fill: '#32cd79'
 })
 
 leafer.add(star)

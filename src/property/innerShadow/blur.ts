@@ -7,7 +7,7 @@ const rect = new Rect({
     width: 100,
     height: 100,
     cornerRadius: 30,
-    fill: 'rgb(50,205,121)',
+    fill: '#32cd79',
     innerShadow: { // [!code hl:6]
         x: 10,
         y: 5,

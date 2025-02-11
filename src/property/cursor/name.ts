@@ -8,7 +8,7 @@ const polygon = new Polygon({
     height: 100,
     points: [10, 90, 10, 10, 50, 70, 90, 10, 90, 90, 90, 90, 10, 90],
     curve: true,
-    fill: 'rgb(50,205,121)',
+    fill: '#32cd79',
     cursor: 'no-drop' // [!code hl]
 })
 

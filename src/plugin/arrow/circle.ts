@@ -8,7 +8,7 @@ const arrow = new Arrow({
     y: 50,
     endArrow: 'circle',  // [!code hl:1]
     strokeWidth: 5,
-    stroke: 'rgb(50,205,121)'
+    stroke: '#32cd79'
 })
 
 leafer.add(arrow)

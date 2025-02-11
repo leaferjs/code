@@ -7,7 +7,7 @@ const polygon = new Polygon({  // [!code hl:5]
     width: 100,
     height: 100,
     sides: 5,
-    fill: 'rgb(50,205,121)'
+    fill: '#32cd79'
 })
 
 leafer.add(polygon)

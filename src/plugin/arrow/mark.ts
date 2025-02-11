@@ -9,7 +9,7 @@ const arrow = new Arrow({
     startArrow: 'mark',// [!code hl:2]
     endArrow: 'mark',
     strokeWidth: 5,
-    stroke: 'rgb(50,205,121)'
+    stroke: '#32cd79'
 })
 
 leafer.add(arrow)

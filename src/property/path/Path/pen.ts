@@ -4,7 +4,7 @@ import { Leafer, Path } from 'leafer-ui'
 const leafer = new Leafer({ view: window })
 
 const path = new Path({
-    fill: 'rgb(50,205,121)'
+    fill: '#32cd79'
 })
 
 leafer.add(path)

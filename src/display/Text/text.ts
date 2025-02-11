@@ -4,7 +4,7 @@ import { Leafer, Text } from 'leafer-ui'
 const leafer = new Leafer({ view: window })
 
 const text = new Text({
-    fill: 'rgb(50,205,121)',
+    fill: '#32cd79',
     text: 'Welcome to LeaferJS',
 })
 

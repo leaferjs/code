@@ -7,7 +7,7 @@ const line = new Line({  // [!code hl:5]
     width: 100,
     rotation: 90,
     strokeWidth: 5,
-    stroke: 'rgb(50,205,121)'
+    stroke: '#32cd79'
 })
 
 leafer.add(line)
