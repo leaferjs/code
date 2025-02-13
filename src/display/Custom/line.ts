@@ -1,3 +1,4 @@
+// #自定义元素 [自定义线条]
 import { Leafer, UI, PathCommandDataHelper, affectStrokeBoundsType, PathBounds, Debug, registerUI, dataProcessor, UIData } from 'leafer-ui'
 import { IStrokeAlign, IUIInputData, IUIData } from '@leafer-ui/interface'
 

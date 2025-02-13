@@ -1,3 +1,4 @@
+// #自定义元素 [继承 Rect]
 import { IRectInputData, IRectData } from '@leafer-ui/interface'
 import { Leafer, registerUI, dataProcessor, Rect, RectData, dataType } from 'leafer-ui'
 

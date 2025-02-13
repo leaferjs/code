@@ -1,3 +1,4 @@
+// #自定义元素 [添加属性]
 import { Leafer, Rect, RectData, registerUI, dataProcessor, boundsType } from 'leafer-ui'
 import { IRectInputData, IRectData } from '@leafer-ui/interface'
 

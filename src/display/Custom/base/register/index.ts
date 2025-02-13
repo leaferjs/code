@@ -1,3 +1,4 @@
+// #自定义元素 [注册元素]
 import { Leafer, Rect, UI, registerUI } from 'leafer-ui'
 
 

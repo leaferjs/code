@@ -1,3 +1,4 @@
+// #自定义元素 [继承 Pen]
 import { IPenInputData, IPenData, IPen } from '@leafer-ui/interface'
 import { Leafer, registerUI, dataProcessor, Pen, PenData, boundsType } from 'leafer-ui'
 

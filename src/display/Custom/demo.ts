@@ -1,3 +1,4 @@
+// #自定义元素 [使用 canvas.context 自定义图形]
 import { Leafer, UI, registerUI, dataProcessor, UIData } from 'leafer-ui'
 import { IUIInputData, ILeaferCanvas, IRadiusPointData, IUIData } from '@leafer-ui/interface'
 

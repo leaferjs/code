@@ -1,4 +1,4 @@
-// #创建 Group [通过 add 方法添加]
+// #调整元素在父元素中的层叠顺序
 import { Leafer, Group, Rect, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
@@ -19,11 +19,11 @@ const ellipse = new Ellipse({
     fill: "#FEB027"
 })
 
-const group = new Group({ // [!code hl:4]
-    x: 100,
-    y: 100
-})
+leafer.add(new Group({ children: [rect, ellipse] }))
 
-group.add([rect, ellipse])
+setTimeout(() => {
 
-leafer.add(group)
+    // 调整矩形的显示顺序
+    rect.zIndex = 1 // [!code hl]
+
+}, 1000)

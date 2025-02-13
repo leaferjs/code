@@ -1,3 +1,4 @@
+// #自定义元素 [添加方法]
 import { Leafer, Rect, RectData, registerUI, dataProcessor, PointerEvent } from 'leafer-ui'
 import { IRectInputData, IRectData } from '@leafer-ui/interface'
 
