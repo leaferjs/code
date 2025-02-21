@@ -4,9 +4,8 @@ import { Leafer, Rect } from 'leafer-ui'
 // 高度自动生长, 宽度固定不变
 const leafer = new Leafer({
     view: window,
-    width: 200,
     grow: true, // 自动生长 // [!code hl:3] 
-    growWidth: false,  // 单独阻止宽度自动生长
+    width: 200,  // 固定宽度
     fill: '#333'
 })
 
