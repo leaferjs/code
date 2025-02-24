@@ -5,7 +5,7 @@ import '@leafer-in/viewport' // 导入视口插件(可选)
 
 const app = new App({ // [!code hl:6]
     view: window,
-    fill: '#F2F2F2', // 背景色
+    fill: '#333', // 背景色
     tree: { type: 'design' }, // 添加 tree 层
     sky: {}  // 添加 sky 层
 })

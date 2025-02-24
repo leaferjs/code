@@ -5,7 +5,7 @@ import '@leafer-in/viewport' // 导入视口插件(可选)
 
 const app = new App({ // [!code hl:7]
     view: window,
-    fill: '#F2F2F2',
+    fill: '#333',
     editor: {},  //  配置 editor 会自动创建并添加 app.editor 实例、tree 层、sky 层
     //  tree: { type: 'design' },
     //  sky: {}

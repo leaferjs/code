@@ -1,5 +1,6 @@
 // #导出图片 [导出二进制数据]
 import { Leafer, Rect } from 'leafer-ui'
+import '@leafer-in/export' // 引入导出元素插件
 
 const leafer = new Leafer({ view: window })
 

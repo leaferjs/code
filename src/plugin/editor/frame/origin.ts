@@ -3,7 +3,7 @@ import { App, Leafer, Frame, Rect } from 'leafer-ui'
 import { Editor } from '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件(可选)
 
-const app = new App({ view: window, fill: '#F2F2F2' }) // [!code hl:4]
+const app = new App({ view: window, fill: '#333' }) // [!code hl:4]
 
 app.add(app.tree = new Leafer({ type: 'design' })) // 添加 tree 层
 app.add(app.sky = new Leafer())  // 添加 sky 层
