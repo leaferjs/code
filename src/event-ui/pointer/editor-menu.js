@@ -11,7 +11,7 @@ const app = new App({
 app.tree.add(Rect.one({ name: 'rect1', editable: true, fill: '#FEB027', cornerRadius: [20, 0, 0, 20] }, 100, 100))
 app.tree.add(Rect.one({ name: 'rect2', editable: true, fill: '#FFE04B', cornerRadius: [0, 20, 20, 0] }, 300, 100))
 
-app.on(PointerEvent.MENU, (e) => {  // [!code hl:15]
+app.on(PointerEvent.MENU, (e) => {  // [!code hl:19]
 
     if (app.editor.single) {
 
