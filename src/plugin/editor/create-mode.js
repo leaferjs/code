@@ -4,7 +4,9 @@ import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件(可选)
 
 
-const app = new App({ view: window, editor: {} })
+const app = new App({ view: window, editor: {}, fill: '#333' })
+
+app.tree.add({ tag: 'Text', x: 100, y: 100, text: '2秒后，按下鼠标拖动可创建矩形', fill: '#999', fontSize: 16 })
 
 app.tree.add(Rect.one({ editable: true, fill: '#FEB027', cornerRadius: [20, 0, 0, 20] }, 100, 100))
 app.tree.add(Rect.one({ editable: true, fill: '#FFE04B', rotation: 10, cornerRadius: [0, 20, 20, 0] }, 300, 100))

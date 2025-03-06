@@ -15,8 +15,8 @@ app.editor.select(rect) // 选中 rect
 
 setTimeout(() => {
 
-    // 手动旋转到45度 // [!code hl:5]
-    const rotation = 45
+    // 手动旋转到45度 
+    const rotation = 45 // [!code hl:4]
 
     // 围绕中心旋转到指定 rotation， 需减去元素的 rotation，如下：
     app.editor.rotateOf('center', rotation - rect.rotation)
