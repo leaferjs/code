@@ -1,11 +1,14 @@
-// #自动布局 - 布局方向 [沿 X 轴反向自动布局]
+// #自动布局 - 对齐内容 [居中对齐，且行内顶部对齐]
 import { Leafer, Box } from 'leafer-ui'
 import { Flow } from '@leafer-in/flow'  // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 
 const flow = new Flow({
-    flow: 'x-reverse', // 沿 X 轴反向自动布局 // [!code hl]
+    flowAlign: {  // 居中对齐，且行内顶部对齐 // [!code hl:4]
+        content: 'center',
+        y: 'from'
+    },
     fill: '#676',
     width: 100,
     height: 100,

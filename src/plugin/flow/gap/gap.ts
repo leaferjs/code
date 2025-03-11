@@ -1,11 +1,11 @@
-// #自动布局 - 布局方向 [沿 X 轴反向自动布局]
+// #自动布局 - 子元素间距 [固定数值的间距]
 import { Leafer, Box } from 'leafer-ui'
 import { Flow } from '@leafer-in/flow'  // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 
 const flow = new Flow({
-    flow: 'x-reverse', // 沿 X 轴反向自动布局 // [!code hl]
+    gap: 5, // 固定数值的间距 // [!code hl]
     fill: '#676',
     width: 100,
     height: 100,
