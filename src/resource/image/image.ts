@@ -1,4 +1,4 @@
-// # 图片 url [原始图片对象转 url]  
+// #图片 url [原始图片对象转 url]  
 import { Leafer, Image, Platform, Resource } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

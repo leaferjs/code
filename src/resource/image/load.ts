@@ -1,4 +1,4 @@
-// # 等待图片加载完，再添加到应用中
+// #等待图片加载完，再添加到应用中
 import { Leafer, Image, Resource } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

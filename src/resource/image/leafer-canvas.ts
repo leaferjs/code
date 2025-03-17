@@ -1,4 +1,4 @@
-// # 图片 url [跨平台 LeaferCanvas 对象转 url] 
+// #图片 url [跨平台 LeaferCanvas 对象转 url] 
 import { Leafer, Image, LeaferCanvas, Platform, Resource } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
