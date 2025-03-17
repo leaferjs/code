@@ -9,7 +9,6 @@ leafer.add(Rect.one({
     animation: {
         style: { x: 500 }, // style keyframe
         delay: 1, // 延迟 1 秒开始动画 // [!code hl]
-        duration: 2,
-        loop: true
+        duration: 2
     }
 }, 0, 100, 50, 50))
