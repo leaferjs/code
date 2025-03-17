@@ -16,7 +16,7 @@ const animate = rect.animate(
     } // options
 )
 
-// 监听点击 rect 开始动画 [!code hl:3]
+// 监听点击 rect 开始动画 // [!code hl:3]
 rect.on(PointerEvent.TAP, () => {
     animate.play()
 })

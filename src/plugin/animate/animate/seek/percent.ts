@@ -1,5 +1,5 @@
-// #动画 - 不自动播放，监听点击 rect 再播放 [autoplay（Animate）]
-import { Leafer, Rect, PointerEvent } from 'leafer-ui'
+// #动画 - 通过 seek() 方法定位跳转动画 [百分比]
+import { Leafer, Rect } from 'leafer-ui'
 import { Animate } from '@leafer-in/animate' // 导入动画插件 // [!code hl]
 
 const leafer = new Leafer({ view: window })
@@ -17,7 +17,9 @@ const animate = new Animate(
     } // options
 )
 
-// 监听点击 rect 开始动画 // [!code hl:3]
-rect.on(PointerEvent.TAP, () => {
-    animate.play()
-})
+// 通过 seek() 方法定位跳转动画 // [!code hl:5]
+setTimeout(() => {
+
+    animate.seek({ type: 'percent', value: 0.25 }) // = 2 * 0.25
+
+}, 1000)
