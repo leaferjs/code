@@ -1,6 +1,6 @@
 // #导出图片 [导出 Base64 编码数据]
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/export' // 引入导出元素插件
+import '@leafer-in/export' // 引入导出元素插件 // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 

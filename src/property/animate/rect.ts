@@ -1,6 +1,6 @@
 // #动画方法 [摇摆动画]
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/animate' // 导入动画插件
+import '@leafer-in/animate' // 导入动画插件 // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 

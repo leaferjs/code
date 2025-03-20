@@ -1,6 +1,6 @@
 // #调整 Group 大小，不使用 scale 属性
 import { Leafer, Group, Rect, Ellipse } from 'leafer-ui'
-import '@leafer-in/resize'
+import '@leafer-in/resize' // 导入 resize 插件 // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 

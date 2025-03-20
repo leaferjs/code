@@ -1,6 +1,6 @@
 // #HTML 文本
 import { Leafer } from 'leafer-ui'
-import { HTMLText } from '@leafer-in/html'
+import { HTMLText } from '@leafer-in/html' // 导入 html 插件  // [!code hl] 
 
 const leafer = new Leafer({ view: window })
 

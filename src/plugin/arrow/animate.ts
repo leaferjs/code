@@ -1,6 +1,6 @@
 // #动画样式 [虚线箭头动画]
 import { Leafer } from 'leafer-ui'
-import { Arrow } from '@leafer-in/arrow'
+import { Arrow } from '@leafer-in/arrow' // 导入箭头插件 // [!code hl]
 import '@leafer-in/animate' // 导入动画插件
 
 const leafer = new Leafer({ view: window })

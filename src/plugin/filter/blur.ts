@@ -1,6 +1,6 @@
 // #自定义滤镜 [blur 滤镜]
 import { Leafer, Rect, Filter } from 'leafer-ui'
-import '@leafer-in/filter'
+import '@leafer-in/filter'  // 导入滤镜插件  // [!code hl] 
 
 // 注册自定义滤镜
 Filter.register('blur', {

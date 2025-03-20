@@ -1,7 +1,8 @@
 // #滚动条 [修改主题]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
-import { ScrollBar } from '@leafer-in/scroll' // 导入滚动条插件
+import '@leafer-in/viewport' // 导入视口插件
+import { ScrollBar } from '@leafer-in/scroll' // 导入滚动条插件  // [!code hl] 
 
 const app = new App({ view: window, fill: '#000', editor: {} })
 

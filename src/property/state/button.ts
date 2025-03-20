@@ -1,6 +1,6 @@
 // #交互状态 [同步 hover 状态的按钮]
 import { Leafer, Box } from 'leafer-ui'
-import '@leafer-in/state' // 导入交互状态插件
+import '@leafer-in/state' // 导入交互状态插件 // [!code hl] 
 
 const leafer = new Leafer({ view: window, fill: '#333' })
 

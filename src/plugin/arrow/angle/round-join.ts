@@ -1,6 +1,6 @@
 // #箭头样式 [角度箭头 - strokeJoin变的平滑]
 import { Leafer } from 'leafer-ui'
-import { Arrow } from '@leafer-in/arrow'
+import { Arrow } from '@leafer-in/arrow' // 导入箭头插件 // [!code hl]
 
 const leafer = new Leafer({ view: window })
 

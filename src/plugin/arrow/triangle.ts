@@ -1,6 +1,6 @@
 // #箭头样式 [三角形箭头]
 import { Leafer } from 'leafer-ui'
-import { Arrow } from '@leafer-in/arrow'
+import { Arrow } from '@leafer-in/arrow' // 导入箭头插件 // [!code hl]
 
 const leafer = new Leafer({ view: window })
 
