@@ -1,7 +1,7 @@
 // #运动路径 [自身描边动画]
 import { Group, Leafer, Path, Rect } from 'leafer-ui'
-import '@leafer-in/motion-path' // 导入运动路径插件
 import '@leafer-in/animate' // 导入动画插件
+import '@leafer-in/motion-path' // 导入运动路径插件 // [!code hl]
 
 const leafer = new Leafer({ view: window })
 
@@ -11,10 +11,10 @@ const path = new Path({
     x: 100,
     y: 100,
     scale: 0.2,
-    motionPath: true, // 设置为运动路径，该 Group 内的其他元素都可以沿此路径运动
+    motionPath: true, // 设置为运动路径，该 Group 内的其他元素都可以沿此路径运动 // [!code hl]
     stroke: '#32cd79',
     strokeWidth: 20,
-    animation: {  // 沿 path 运动描边至 100%
+    animation: {  // 沿 path 运动描边至 100% // [!code hl:5]
         style: { motion: { type: "percent", value: 1 } },
         duration: 9,
         loop: true
@@ -28,8 +28,9 @@ const pen = new Rect({
     cornerRadius: 10,
     fill: '#FEB027',
     around: 'bottom',
+    motion: 0,
     motionRotation: 45,
-    animation: { // 沿 path 运动至 100%
+    animation: { // 沿 path 运动至 100% // [!code hl:5]
         style: { motion: { type: "percent", value: 1 } },
         duration: 9,
         loop: true
