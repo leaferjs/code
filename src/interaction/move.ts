@@ -1,7 +1,8 @@
 // #模拟平移事件
 import { Leafer, Rect, MoveEvent } from 'leafer-ui'
+import '@leafer-in/viewport' // 导入视口插件 // [!code hl]
 
-const leafer = new Leafer({ view: window })
+const leafer = new Leafer({ view: window, type: 'viewport' })
 
 const rect = new Rect({ x: 100, y: 100, width: 200, height: 200, fill: '#32cd79' })
 
@@ -13,8 +14,8 @@ rect.on(MoveEvent.MOVE, (e) => {
 
 const { interaction } = leafer
 
-leafer.waitReady(() => {  // [!code hl:5]
+setTimeout(() => {  // [!code hl:5]
 
     interaction.move({ x: 100, y: 100, moveX: -100, moveY: -100 })
 
-})
+}, 1000)

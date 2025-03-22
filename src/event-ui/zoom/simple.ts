@@ -1,9 +1,10 @@
 // #监听缩放交互事件
 import { Leafer, Rect, ZoomEvent, LeafHelper } from 'leafer-ui'
+import '@leafer-in/viewport' // 导入视口插件 // [!code hl]
 
 const leafer = new Leafer({
     view: window,
-    type: 'draw'
+    type: 'custom'
 })
 
 const rect = new Rect({ x: 100, y: 100, fill: '#32cd79', draggable: true })
