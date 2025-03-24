@@ -1,5 +1,5 @@
 // #图形编辑器 [editConfig]
-import { Text, defineKey } from 'leafer-ui'
+import { Text } from 'leafer-ui'
 
 // 1. 设置类，所有 Text 元素生效（推荐）
 Text.setEditConfig({
@@ -12,9 +12,9 @@ Text.setEditConfig(function (text: Text) {
     }
 })
 
-
-// 2. 设置实例，单个元素生效 （不推荐）
-const text = new Text({ text: 'hello', editable: true })
-defineKey(text, 'editConfig', {
-    get() { return { moveable: false } }
+// 2. 设置单个元素，支持导出json，会增加内存开销
+new Text({
+    text: 'hello',
+    editable: true,
+    editConfig: { moveable: false }
 })

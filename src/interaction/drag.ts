@@ -13,10 +13,10 @@ rect.on(DragEvent.DRAG, (e) => {
 
 const { interaction } = leafer
 
-leafer.waitReady(() => { // [!code hl:7]
+setTimeout(() => {  // [!code hl:7]
 
     interaction.pointerDown({ x: 100, y: 100 })
     interaction.pointerMove({ x: 500, y: 500 }) // drag
     interaction.pointerUp()
 
-})
+}, 1000)

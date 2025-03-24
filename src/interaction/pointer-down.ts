@@ -9,18 +9,17 @@ leafer.add(rect)
 
 rect.on(PointerEvent.DOWN, (e) => {
     console.log('down', e)
+    if (e.left) rect.fill = 'blue'
 })
 
 rect.on(PointerEvent.TAP, (e) => {
     console.log('tap', e)
+    if (e.left) rect.fill = '#32cd79'
 })
 
 const { interaction } = leafer
 
-leafer.waitReady(() => { // [!code hl:12]
-
-    interaction.pointerDown({ x: 100, y: 100 })
-    interaction.pointerUp()
+setTimeout(() => {  // [!code hl:15]
 
     interaction.pointerDown({ x: 100, y: 100, buttons: PointerButton.MIDDLE })
     interaction.pointerUp()
@@ -28,7 +27,10 @@ leafer.waitReady(() => { // [!code hl:12]
     interaction.pointerDown({ x: 100, y: 100, buttons: PointerButton.RIGHT })
     interaction.pointerUp()
 
-})
+    interaction.pointerDown({ x: 100, y: 100 })
 
+    setTimeout(() => {
+        interaction.pointerUp({ x: 100, y: 100 })
+    }, 500)
 
-
+}, 1000)

@@ -1,7 +1,7 @@
 // #拖拽创建图形 [添加到 Frame]
 import { App, Frame, Rect, Ellipse } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
-import '@leafer-in/viewport' // 导入视口插件(可选)
+import '@leafer-in/viewport' // 导入视口插件 (可选)
 
 // 创建可拖拽的 dom 图形（圆形、矩形）
 document.body.innerHTML = `
