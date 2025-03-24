@@ -1,4 +1,4 @@
-// #创建 Polygon [绘制 0.2 曲率的平滑多边形]
+// #创建 Polygon [绘制 0.2 曲率的平滑多边形（Leafer)]
 import { Leafer, Polygon } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

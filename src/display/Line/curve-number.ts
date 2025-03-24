@@ -1,4 +1,4 @@
-// #创建 Line [绘制 0.2 曲率的曲线]
+// #创建 Line [绘制 0.2 曲率的曲线（Leafer)]
 import { Leafer, Line } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

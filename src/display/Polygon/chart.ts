@@ -1,4 +1,4 @@
-// #创建 Polygon [绘制趋势图]
+// #创建 Polygon [绘制趋势图（Leafer)]
 import { Leafer, Polygon } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

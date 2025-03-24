@@ -1,4 +1,4 @@
-// #创建 Group [通过 children 属性添加]
+// #创建 Group [通过 children 属性添加（Leafer)]
 import { Leafer, Group, Rect, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,4 +1,4 @@
-// #创建 Group [通过 add 方法添加]
+// #创建 Group [通过 add 方法添加（Leafer)]
 import { Leafer, Group, Rect, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

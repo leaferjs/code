@@ -1,4 +1,4 @@
-// #创建 Line [绘制到目标点的直线]
+// #创建 Line [绘制到目标点的直线（Leafer)]
 import { Leafer, Line } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

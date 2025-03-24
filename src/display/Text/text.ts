@@ -1,4 +1,4 @@
-// #创建 Text [标准创建]
+// #创建 Text [标准创建（Leafer)]
 import { Leafer, Text } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,4 +1,4 @@
-// #创建Image [固定宽度，自适应高度]
+// #创建Image [固定宽度，自适应高度（Leafer)]
 import { Leafer, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

@@ -1,4 +1,4 @@
-// #创建 Canvas [使用 context 绘制]
+// #创建 Canvas [使用 context 绘制（Leafer)]
 import { Leafer, Canvas } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

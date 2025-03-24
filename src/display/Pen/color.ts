@@ -1,4 +1,4 @@
-// #创建 Pen [画出不同颜色的形状]
+// #创建 Pen [画出不同颜色的形状（Leafer)]
 import { Leafer, Pen } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
