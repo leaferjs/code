@@ -3,7 +3,7 @@ import { Leafer, Star } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
-const star = new Star({  // [!code hl:5]
+const star = new Star({  // [!code hl:8]
     width: 100,
     height: 100,
     innerRadius: 0.5,

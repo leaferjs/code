@@ -3,7 +3,7 @@ import { Leafer, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 
-const ellipse = new Ellipse({  // [!code hl:8]
+const ellipse = new Ellipse({  // [!code hl:11]
     width: 100,
     height: 100,
     startAngle: -60,
