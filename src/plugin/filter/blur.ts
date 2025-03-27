@@ -7,7 +7,7 @@ Filter.register('blur', {
     apply(filter, _ui, worldBounds, currentCanvas, _orginCanvas, _shape) { // 应用自定义滤镜
         currentCanvas.filter = `blur(${filter.blur}px)`
         currentCanvas.resetTransform()
-        currentCanvas.copyWorld(currentCanvas, worldBounds, worldBounds, "destination-atop")
+        currentCanvas.copyWorld(currentCanvas, worldBounds, worldBounds, "copy")
         currentCanvas.filter = 'none'
     },
     getSpread(filter) { // 扩展元素的渲染边界
