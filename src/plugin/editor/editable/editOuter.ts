@@ -9,6 +9,12 @@ Text.setEditOuter(function (text: Text) {
     return text.get('width') ? 'EditTool' : 'TextEditTool'
 })
 
+// 2. 设置单个元素，不会导出json
+const text = new Text({ text: 'hello', editable: true })
+Object.defineProperty(text, 'editOuter', {
+    get() { return 'TextEditTool' }
+})
+
 // 2. 设置单个元素，支持导出json，会增加内存开销
 new Text({
     text: 'hello',
