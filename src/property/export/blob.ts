@@ -7,7 +7,7 @@ const leafer = new Leafer({ view: window })
 const rect = Rect.one({ fill: '#32cd79' }, 100, 100)
 leafer.add(rect)
 
-rect.export('png', true).then(result => { // [!code hl:5]
+rect.export('png', true).then(result => { // 第2个参数为true表示导出二进制 [!code hl:5]
     console.log(result.data)
 })
 

@@ -7,7 +7,7 @@ const leafer = new Leafer({ view: window })
 const rect = Rect.one({ fill: '#32cd79' }, 100, 100)
 leafer.add(rect)
 
-rect.export('jpg').then(result => { // [!code hl:5]
+rect.export('jpg').then(result => { // 可设置图片质量 export('jpg', 0.92), 默认为0.92 // [!code hl:5]
     console.log(result.data)
 })
 

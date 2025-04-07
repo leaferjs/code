@@ -7,7 +7,7 @@ const leafer = new Leafer({ view: window })
 const rect = Rect.one({ fill: '#32cd79' }, 100, 100)
 leafer.add(rect)
 
-rect.export('canvas').then(result => { // [!code hl:5]
+rect.export('canvas').then(result => { // [!code hl:11]
     const leaferCanvas = result.data
     const canvas = leaferCanvas.view
     const context = leaferCanvas.context
