@@ -1,4 +1,4 @@
-import { Leafer, Rect, RectData, registerUI, dataProcessor, PointerEvent } from 'leafer-ui'
+import { Rect, RectData, PointerEvent } from '@leafer-ui/core' // 引入跨平台核心包
 
 
 export class Custom extends Rect {
@@ -29,9 +29,12 @@ export class Custom extends Rect {
 
 export class CustomData extends RectData {}
 
-registerUI()(Custom) 
-dataProcessor(CustomData)(Custom.prototype)
+Custom.registerUI()
+Custom.registerData(CustomData)
 
+
+// 使用自定义元素
+import { Leafer } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 const custom = new Custom({ x: 100, y: 100, width: 100, height: 200, around: 'center', fill: 'blue', draggable: true })

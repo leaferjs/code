@@ -1,6 +1,6 @@
 // #自定义元素 [继承 Group]
+import { registerUI, dataProcessor, Group, GroupData, dataType } from '@leafer-ui/core' // 引入跨平台核心包
 import { IGroupInputData, IGroupData } from '@leafer-ui/interface'
-import { Leafer, registerUI, dataProcessor, Group, GroupData, dataType } from 'leafer-ui'
 
 
 // 定义数据
@@ -36,6 +36,10 @@ class CustomGroup extends Group {
     }
 
 }
+
+
+// 使用自定义元素
+import { Leafer } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 const customGroup = new CustomGroup({ top: 50, y: 100, draggable: true })

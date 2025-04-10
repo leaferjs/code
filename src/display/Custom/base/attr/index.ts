@@ -1,5 +1,5 @@
 // #自定义元素 [添加属性]
-import { Leafer, Rect, RectData, registerUI, dataProcessor, boundsType } from 'leafer-ui'
+import { Rect, RectData, registerUI, dataProcessor, boundsType } from '@leafer-ui/core' // 引入跨平台核心包
 import { IRectInputData, IRectData } from '@leafer-ui/interface'
 
 
@@ -36,6 +36,9 @@ export class Custom extends Rect {
 
 }
 
+
+// 使用自定义元素
+import { Leafer } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 const custom = new Custom({ left: 50, width: 100, height: 200, fill: 'blue', draggable: true })

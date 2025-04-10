@@ -1,4 +1,4 @@
-import { Leafer, Rect, UI, registerUI } from 'leafer-ui'
+import { Rect } from '@leafer-ui/core' // 引入跨平台核心包
 
 
 class Custom extends Rect {   // [!code hl:7]
@@ -9,6 +9,9 @@ class Custom extends Rect {   // [!code hl:7]
 
 Custom.registerUI() // 1. 注册元素
 
+
+// 使用自定义元素
+import { Leafer, UI  } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 const custom = new Custom({ width: 100, height: 200, fill:'blue', draggable: true })

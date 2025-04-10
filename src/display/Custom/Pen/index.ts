@@ -1,6 +1,6 @@
 // #自定义元素 [继承 Pen]
+import { registerUI, dataProcessor, Pen, PenData, boundsType } from '@leafer-ui/core' // 引入跨平台核心包
 import { IPenInputData, IPenData, IPen } from '@leafer-ui/interface'
-import { Leafer, registerUI, dataProcessor, Pen, PenData, boundsType } from 'leafer-ui'
 
 
 interface ICustomPen extends IPen {
@@ -58,6 +58,10 @@ class CustomPen extends Pen implements ICustomPen {
     }
 
 }
+
+
+// 使用自定义元素
+import { Leafer } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })
 const customPen = new CustomPen({ size: 100, fill: 'blue', draggable: true })
