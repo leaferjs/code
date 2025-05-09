@@ -1,4 +1,4 @@
-// #应用配置 - 控制视图缩放范围 [App]
+// #应用与引擎配置 - 控制视图缩放范围 [App]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

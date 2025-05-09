@@ -1,4 +1,4 @@
-// #应用配置 - 阻止移动端默认滑动页面事件 [App]
+// #应用与引擎配置 - 阻止移动端默认滑动页面事件 [App]
 import { App, Rect } from 'leafer-ui'
 
 const app = new App({

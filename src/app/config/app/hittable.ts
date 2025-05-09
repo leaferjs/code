@@ -1,4 +1,4 @@
-// #应用配置 - 关闭交互事件 [App]
+// #应用与引擎配置 - 关闭交互事件 [App]
 import { App, Rect } from 'leafer-ui'
 
 const app = new App({

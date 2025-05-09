@@ -1,4 +1,4 @@
-// #应用配置 - 获取穿透路径 [App]
+// #应用与引擎配置 - 获取穿透路径 [App]
 import { App, Rect, PointerEvent } from 'leafer-ui'
 
 const app = new App({

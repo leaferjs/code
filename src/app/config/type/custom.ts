@@ -1,4 +1,4 @@
-// #应用配置 - custom 视口类型 [Leafer]
+// #应用与引擎配置 - custom 视口类型 [Leafer]
 import { Leafer, Rect, MoveEvent, ZoomEvent } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

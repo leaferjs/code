@@ -1,4 +1,4 @@
-// #应用配置 - custom 视口类型 [实现原理]
+// #应用与引擎配置 - custom 视口类型 [实现原理]
 import { App, Rect } from 'leafer-ui'
 import '@leafer-in/viewport' // 导入视口插件
 

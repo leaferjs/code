@@ -1,4 +1,4 @@
-// #应用配置 - 禁用多点触屏功能 [App]
+// #应用与引擎配置 - 禁用多点触屏功能 [App]
 import { App, Rect } from 'leafer-ui'
 
 const app = new App({

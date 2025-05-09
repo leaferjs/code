@@ -1,4 +1,4 @@
-// #应用配置 - 取消光标碰撞半径 [App]
+// #应用与引擎配置 - 取消光标碰撞半径 [App]
 import { App, Rect } from 'leafer-ui'
 
 const app = new App({
