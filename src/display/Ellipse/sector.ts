@@ -1,4 +1,4 @@
-// #创建 Ellipse [绘制扇形（Leafer)]
+// #创建 Ellipse [绘制扇形 (Leafer)]
 import { Leafer, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

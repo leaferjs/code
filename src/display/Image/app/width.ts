@@ -1,4 +1,4 @@
-// #创建Image [固定宽度，自适应高度（App)]
+// #创建Image [固定宽度，自适应高度 (App)]
 import { App, Image } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

@@ -1,4 +1,4 @@
-// #创建Image [图片占位符（Leafer)]
+// #创建Image [图片占位符 (Leafer)]
 import { Leafer, Image } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

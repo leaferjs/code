@@ -1,4 +1,4 @@
-// #创建 Canvas [使用图形元素绘制（App)]
+// #创建 Canvas [使用图形元素绘制 (App)]
 import { App, Canvas, Pen } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

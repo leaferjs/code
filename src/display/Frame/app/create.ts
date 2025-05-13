@@ -1,4 +1,4 @@
-// #创建 Frame [标准创建（App)]
+// #创建 Frame [标准创建 (App)]
 import { App, Frame, Ellipse } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

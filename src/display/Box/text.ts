@@ -1,4 +1,4 @@
-// #创建 Box [自适应文本（Leafer)]
+// #创建 Box [自适应文本 (Leafer)]
 import { Leafer, Box } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window, fill: '#333' })

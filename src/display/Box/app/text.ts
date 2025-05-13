@@ -1,4 +1,4 @@
-// #创建 Box [自适应文本（App)]
+// #创建 Box [自适应文本 (App)]
 import { App, Box } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

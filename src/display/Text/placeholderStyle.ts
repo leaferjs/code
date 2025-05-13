@@ -1,4 +1,4 @@
-// #创建 Text [占位符样式（Leafer)]
+// #创建 Text [占位符样式 (Leafer)]
 import { Leafer, Text } from 'leafer-ui'
 import '@leafer-in/state' // 导入交互状态插件 // [!code hl] 
 

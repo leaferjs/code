@@ -1,4 +1,4 @@
-// #创建 Pen [橡皮擦（App)]
+// #创建 Pen [橡皮擦 (App)]
 import { App, Group, Rect, DragEvent, Pen } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

@@ -1,4 +1,4 @@
-// #创建 Pen [画曲线（Leafer)]
+// #创建 Pen [画曲线 (Leafer)]
 import { Leafer, Pen } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

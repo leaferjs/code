@@ -1,4 +1,4 @@
-// #创建 Text [带背景框样式（Leafer)]
+// #创建 Text [带背景框样式 (Leafer)]
 import { Leafer, Text } from 'leafer-ui'
 import '@leafer-in/state' // 导入交互状态插件 
 import '@leafer-in/animate' // 导入动画插件  

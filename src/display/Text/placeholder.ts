@@ -1,4 +1,4 @@
-// #创建 Text [占位符文本（Leafer)]
+// #创建 Text [占位符文本 (Leafer)]
 import { Leafer, Text } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

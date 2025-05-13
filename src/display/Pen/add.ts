@@ -1,4 +1,4 @@
-// #创建 Pen [结合图形组件（Leafer)]
+// #创建 Pen [结合图形组件 (Leafer)]
 import { Leafer, Pen, Ellipse } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

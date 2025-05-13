@@ -1,4 +1,4 @@
-// #创建 Text [带背景框样式（App)]
+// #创建 Text [带背景框样式 (App)]
 import { App, Text } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)

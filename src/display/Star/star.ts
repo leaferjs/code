@@ -1,4 +1,4 @@
-// #创建 Star [绘制五角星（Leafer)]
+// #创建 Star [绘制五角星 (Leafer)]
 import { Leafer, Star } from 'leafer-ui'
 
 const leafer = new Leafer({ view: window })

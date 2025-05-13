@@ -1,4 +1,4 @@
-// #创建 Group [通过 children 属性添加（App)]
+// #创建 Group [通过 children 属性添加 (App)]
 import { App, Group, Rect, Ellipse } from 'leafer-ui'
 import '@leafer-in/editor' // 导入图形编辑器插件
 import '@leafer-in/viewport' // 导入视口插件 (可选)
