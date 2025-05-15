@@ -14,7 +14,7 @@ const box = new Box({ // [!code hl:8]
     editable: true
 })
 
-const rect = new Ellipse({
+const circle = new Ellipse({
     x: 60,
     y: 60,
     width: 50,
@@ -24,4 +24,4 @@ const rect = new Ellipse({
 })
 
 app.tree.add(box)
-box.add(rect)
+box.add(circle)

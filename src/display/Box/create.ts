@@ -9,7 +9,7 @@ const box = new Box({ // [!code hl:4]
     fill: '#FF4B4B'
 })
 
-const rect = new Ellipse({
+const circle = new Ellipse({
     x: 60,
     y: 60,
     width: 50,
@@ -19,4 +19,4 @@ const rect = new Ellipse({
 })
 
 leafer.add(box)
-box.add(rect)
+box.add(circle)

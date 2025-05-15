@@ -12,7 +12,7 @@ const frame = new Frame({ // [!code hl:6]
     editable: true
 })
 
-const rect = new Ellipse({
+const circle = new Ellipse({
     x: 60,
     y: 60,
     width: 50,
@@ -22,4 +22,4 @@ const rect = new Ellipse({
 })
 
 app.tree.add(frame)
-frame.add(rect)
+frame.add(circle)
