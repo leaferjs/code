@@ -1,5 +1,6 @@
-// #突出主体、淡化其他元素 [leafer]
+// #突出显示并置顶渲染，淡化其他元素 [leafer]
 import { Leafer, Rect } from 'leafer-ui'
+import '@leafer-in/bright' // 导入突出显示元素插件
 
 const leafer = new Leafer({ view: window })
 
@@ -11,9 +12,9 @@ leafer.add(Rect.one({ fill: '#FFE04B', cornerRadius: [0, 20, 20, 0] }, 320, 100)
 
 setTimeout(() => {
 
-    leafer.dim = true // 进行淡化 // [!code hl:4]
-    // leafer.dim = 0.2 // 指定透明度
+    rect.bright = true // 突出显示，置顶渲染 // [!code hl:4]
 
-    rect.dimskip = true // 跳过淡化，突出主体
+    leafer.dim = true // 淡化其他元素 
+    // leafer.dim = 0.2 // 可指定淡化的透明度
 
 }, 1000)
