@@ -1,6 +1,6 @@
 // #突出显示，置顶渲染元素 [leafer]
 import { Leafer, Rect } from 'leafer-ui'
-import '@leafer-in/bright' // 导入突出显示元素插件
+import '@leafer-in/bright' // 导入突出显示元素插件  // [!code hl]
 
 const leafer = new Leafer({ view: window })
 
